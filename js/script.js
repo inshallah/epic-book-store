@@ -79,7 +79,7 @@ function creareCards(data) {
     <article class="product-card-mini">
     <h2 class="product-card-mini__title">${books.title}</h2>
     <a class="product-card-mini__img-wrap">
-    <img class="product-card-mini__img" src="img/book-pravilnyij-vyibor.jpg" alt="${books.title}">
+    <img class="product-card-mini__img" src="${books.src}" alt="${books.title}">
     </a>
     <p class="product-card-mini__descr">${books.description}</p>
     <div class="product-card-mini__price">${books.price}</div>
