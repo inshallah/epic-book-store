@@ -15,79 +15,79 @@ const data = {
   books: [
   {
     title: "Латеральная логика",
-    image: "img/book/*jpg";
-    description: "Головоломный путь к нестандартному мышлению";
-    price: '500р';
-    href: ;
+    image: "img/book/*jpg",
+    description: "Головоломный путь к нестандартному мышлению",
+    price: '500р'
+    // href:
   }, {
-   title: "Латеральная логика",
-   image: "img/book/*jpg";
-   description: "Головоломный путь к нестандартному мышлению";
-   price: '500р';
-   href: ;
- }, {
-   title: "Латеральная логика",
-   image: "img/book/*jpg";
-   description: "Головоломный путь к нестандартному мышлению";
-   price: '500р';
-   href: ;
- }, {
-   title: "Латеральная логика",
-   image: "img/book/*jpg";
-   description: "Головоломный путь к нестандартному мышлению";
-   price: '500р';
-   href: ;
- } ,   {
-  title: "Латеральная логика",
-  image: "img/book/*jpg";
-  description: "Головоломный путь к нестандартному мышлению";
-  price: '500р';
-  href: ;
-}, {
- title: "Латеральная логика",
- image: "img/book/*jpg";
- description: "Головоломный путь к нестандартному мышлению";
- price: '500р';
- href: ;
-}, {
- title: "Латеральная логика",
- image: "img/book/*jpg";
- description: "Головоломный путь к нестандартному мышлению";
- price: '500р';
- href: ;
-}, {
- title: "Латеральная логика",
- image: "img/book/*jpg";
- description: "Головоломный путь к нестандартному мышлению";
- price: '500р';
- href: ;
-}
+    title: "Латеральная логика",
+    image: "img/book/*jpg",
+    description: "Головоломный путь к нестандартному мышлению",
+    price: '500р'
+    // href:
+  }, {
+    title: "Латеральная логика",
+    image: "img/book/*jpg",
+    description: "Головоломный путь к нестандартному мышлению",
+    price: '500р'
+    // href:
+  }, {
+    title: "Латеральная логика",
+    image: "img/book/*jpg",
+    description: "Головоломный путь к нестандартному мышлению",
+    price: '500р'
+    // href:
+  } ,   {
+    title: "Латеральная логика",
+    image: "img/book/*jpg",
+    description: "Головоломный путь к нестандартному мышлению",
+    price: '500р'
+    // href:
+  }, {
+    title: "Латеральная логика",
+    image: "img/book/*jpg",
+    description: "Головоломный путь к нестандартному мышлению",
+    price: '500р'
+    // href:
+  }, {
+    title: "Латеральная логика",
+    image: "img/book/*jpg",
+    description: "Головоломный путь к нестандартному мышлению",
+    price: '500р'
+    // href:
+  }, {
+    title: "Латеральная логика",
+    image: "img/book/*jpg",
+    description: "Головоломный путь к нестандартному мышлению",
+    price: '500р'
+    // href:
+  }
 
-]
+  ]
 
 };
 
 const cards = document.querySelector('.j-product-cards');
 const elements = cards.querySelectorAll('.product-card-mini');
 
-function creareCards(data) {
+function createCards(data) {
   const booksArray = data.books;
-  let cardSting = ``;
+  let cardString = ``;
 
-  booksArray.forEach(function(element) {
-    cardSting = cardSting + `<a class="product-card-mini-wrap" href="">
+  booksArray.forEach(function(book) {
+    cardString = cardString + `<a class="product-card-mini-wrap" href="">
     <article class="product-card-mini">
-    <h2 class="product-card-mini__title">${books.title}</h2>
+    <h2 class="product-card-mini__title">${book.title}</h2>
     <a class="product-card-mini__img-wrap">
-    <img class="product-card-mini__img" src="${books.src}" alt="${books.title}">
+    <img class="product-card-mini__img" src="${book.src}" alt="${book.title}">
     </a>
-    <p class="product-card-mini__descr">${books.description}</p>
-    <div class="product-card-mini__price">${books.price}</div>
+    <p class="product-card-mini__descr">${book.description}</p>
+    <div class="product-card-mini__price">${book.price}</div>
     </article>
     </a>`
   })
 
-  return cardSting;
+  return cardString;
 };
 
 function insertElements(data, wrap) {
@@ -95,4 +95,8 @@ function insertElements(data, wrap) {
   wrap.innerHTML = html;
 };
 
-insertElements(data, cards);
+
+if(cards) {
+  insertElements(data, cards);
+};
+
