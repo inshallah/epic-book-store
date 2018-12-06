@@ -15,10 +15,10 @@
   <header class="page-header">
     <div class="page-header__inner">
       <a href="" class="logo"><!-- <img src="" alt="book store"> -->book store</a>
-      <span class="working-hours">c 9:00 до 19:00</span>
+      <span class="working-hours sm-hidden">c 9:00 до 19:00</span>
       <nav class="main-nav">
         <button class="main-nav__toggle">Главное меню</button>
-        <ul class="main-nav__list">
+        <ul class="main-nav__list sm-hidden">
           <li class="main-nav__item">
             <a class="main-nav__link" href="">Книги</a>
           </li>
@@ -33,7 +33,7 @@
       <a class="page-header__basket-icon" href="#">
         <img class="basket-icon" src="" alt="basket-icon">
       </a>
-      <a class="page-header__phone-icon" href="#">
+      <a class="page-header__phone-icon sm-hidden" href="#">
         <img class="phone-icon" src="" alt="phone-icon">
       </a>
     </div>
@@ -42,10 +42,10 @@
 
   <main>
 
-    <article class="book-profile j-book-profile">
+    <article class="book-profile">
       <div class="book-profile__inner">
 
-        <div class="book-profile__demo-pages demo-pages">
+        <div class="demo-pages sm-hidden md-hidden">
           <div class="demo-pages__inner">
             <img class="demo-pages__page" src="img/*.jpg" alt="Демонстрационная страница 1">
             <img class="demo-pages__page" src="img/*.jpg" alt="Демонстрационная страница 2">
@@ -53,18 +53,27 @@
           </div>
         </div>
 
-        <div class="book-profile__info">
 
-          <div class="book-profile__img-wrap">
-            <img class="book-profile__img" src="" alt="">
-          </div>
+        <div class="book-profile__info">
 
           <h1 class="book-profile__title">Суперпотребители</h1>
           <span class="book-profile__author">Эдди Юн</span>
           <p class="book-profile__slogan">Кто это и почему они так важны для вашего бизнеса</p>
 
-          <div class="book-profile__tech-info">
+          <div class="cover-page">
+            <img class="cover-page__img" src="" alt="">
 
+            <div class="demo-pages lg-hidden sm-hidden">
+              <div class="demo-pages__inner">
+                <img class="demo-pages__page" src="img/*.jpg" alt="Демонстрационная страница 1">
+                <img class="demo-pages__page" src="img/*.jpg" alt="Демонстрационная страница 2">
+                <img class="demo-pages__page" src="img/*.jpg" alt="Демонстрационная страница 3">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="book-profile__tech-info">
             <table class="tech-info">
               <tr class="tech-info__raw">
                 <td class="tech-info__item">Артикул</td>
@@ -83,11 +92,28 @@
                 <td class="tech-info__item"></td>
               </tr>
             </table>
-
           </div>
 
+          <div class="add-to-basket">
+            <button class="add-to-basket__btn">Добавить в корзину</button>
+            <div class="goods-in-basket"></div>
+            <span class="goods-in-basket-unit">шт.</span>
+          </div>
 
+          <div class="social-likes">
+            <img class="social-likes__img" src="" alt="">
+            <span class="social-likes__text">
+              <span class="social-likes__counts">20</span>людям понравилась эта книга</span>
+            </div>
 
+            <div class="book-profile__description">
+              <h2 class="book-profile__description-title">Короткое описание</h2>
+              <p class="book-profile__description-text">В отличие от обычных покупателей суперпотребителиочень заинтересованы в ваших товарах, а возможно, даже слегка помешаны на них.</p>
+              <p class="book-profile__description-text">Они знают о кроссовках все и имеют десятки пар. Они спортивные фанаты с копиями футболок любимой команды. А стены их гаражей украшены подписанной символикой.</p>
+              <a href="" class="book-profile__description-full">Показать полностью</a>
+            </div>
+
+          </div>
 
         </div>
       </article>
