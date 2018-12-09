@@ -14,28 +14,40 @@
 
   <header class="page-header">
     <div class="page-header__inner">
-      <a href="" class="logo"><!-- <img src="" alt="book store"> -->book store</a>
-      <span class="working-hours sm-hidden">c 9:00 до 19:00</span>
-      <nav class="main-nav">
-        <button class="main-nav__toggle">Главное меню</button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="">Книги</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="">Рекомендации</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <a class="page-header__basket-icon" href="#">
-        <img class="basket-icon" src="" alt="basket-icon">
-      </a>
-      <a class="page-header__phone-icon sm-hidden" href="#">
-        <img class="phone-icon" src="" alt="phone-icon">
-      </a>
+
+      <div class=page-header_left>
+        <a href="#" class="logo">
+          <img src="img/logo-pic.jpg" alt="book store">
+        </a>
+        <span class="working-hours sm-hidden">c 9:00 до 19:00</span>
+      </div>
+
+      <div class=page-header_right>
+        <nav class="main-nav">
+          <button class="main-nav__toggle main-nav__toggle_lg-hidden">Главное меню</button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="">Книги</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="">Рекомендации</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="page-header__icons">
+          <a class="basket-icon-link" href="#">
+            <img class="basket-icon-img" src="img/icon-basket.png" alt="basket-icon">
+          </a>
+          <a class="phone-icon-link sm-hidden" href="#">
+            <img class="phone-icon-img" src="img/icon-phone.png" alt="phone-icon">
+          </a>
+        </div>
+      </div>
+
     </div>
   </header>
 
@@ -45,16 +57,20 @@
     <div class="promo">
       <div class="promo__inner">
         <div class="slider">
-          <div class="slider__inner">
-            <article class="slider__item">
-              <h2 class="slider__item-title">Новое поступление книги «Симпсоны и их математические секреты»</h2>
-              <p class="slider__item-announce">Для поклонников сериала «Симпсоны» и для всех, кому интересна тематика.</p>
-              <a class="slider__item-more-about" href="">Хочу узнать о книге больше</a>
-              <a href="" class="slider__item-img-wrap sm-hidden md-hidden">
-                <img class="slider__item-img" src="img/book-simpsony-i-ih-matematicheskie-sekrety.jpg" alt="Simpsons book">
-              </a>
-            </article>
-          </div>
+          <article class="slider__item">
+            <div class="slider__item-descr">
+              <h2 class="slider__item-news">Новое поступление книги «Симпсоны<br> и их математические секреты»</h2>
+              <div class="slider__item-descr_border">
+                <p class="slider__item-announce">Для поклонников сериала «Симпсоны» и для всех, кому интересна математика.</p>
+                <a class="slider__item-more-about" href="">Хочу узнать о книге больше</a>
+              </div>
+            </div>
+
+            <a href="" class="slider__item-img-wrap sm-hidden md-hidden">
+              <img class="slider__item-img" src="img/book-simpsony-i-ih-matematicheskie-sekrety.jpg" alt="Simpsons book">
+            </a>
+
+          </article>
         </div>
       </div>
     </div>
@@ -63,227 +79,228 @@
     <section class="catalog">
       <h1 class="catalog__title">Каталог</h1>
 
-      <div class="catalog__tabs-wrap">
-        <ul class="catalog__tabs">
-          <li class="catalog__tab-item">
-            <a href="" class="catalog__tab-link">Все</a>
-          </li>
-          <li class="catalog__tab-item">
-            <a href="" class="catalog__tab-link">Маркетинг</a>
-          </li>
-          <li class="catalog__tab-item">
-            <a href="" class="catalog__tab-link">Научпоп</a>
-          </li>
-          <li class="catalog__tab-item">
-            <a href="" class="catalog__tab-link">Бизнес</a>
-          </li>
-          <li class="catalog__tab-item">
-            <a href="" class="catalog__tab-link">Творчество</a>
-          </li>
-          <li class="catalog__tab-item">
-            <a href="" class="catalog__tab-link">Бизнес</a>
-          </li>
-        </ul>
-      </div>
+      <div class="tabs-wrap">
 
-      <div class="catalog__list-wrap">
-        <div class="catalog__list j-product-cards">
-<!--
-          <a class="product-card-mini-wrap" href="">
-            <article class="product-card-mini">
-              <h2 class="product-card-mini__title">Латеральная логика</h2>
-              <img class="product-card-mini__img" src="img/book-lateralnaya-logika.jpg" alt="book-lateralnaya-logika">
-              <p class="product-card-mini__descr">Головоломный путь к нестандартному мышлению</p>
+        <div class="tabs-wrap__inner">
+
+          <ul class="tabs j-tabs">
+            <li class="tabs__item">
+              <a href="#" class="tabs__link" data-type="all">Все</a>
+            </li>
+            <li class="tabs__item">
+              <a href="#" class="tabs__link" data-type="marketing">Маркетинг</a>
+            </li>
+            <li class="tabs__item">
+              <a href="#" class="tabs__link" data-type="sience">Научпоп</a>
+            </li>
+            <li class="tabs__item">
+              <a href="#" class="tabs__link" data-type="business">Бизнес</a>
+            </li>
+            <li class="tabs__item">
+              <a href="#" class="tabs__link" data-type="creativity">Творчество</a>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="catalog__list-wrap">
+          <div class="catalog__list j-product-cards">
+
+            <a class="product-card-mini-wrap" href="">
+              <article class="product-card-mini">
+                <h2 class="product-card-mini__title">Латеральная логика</h2>
+                <img class="product-card-mini__img" src="img/book-lateralnaya-logika.jpg" alt="book-lateralnaya-logika">
+                <p class="product-card-mini__descr">Головоломный путь к нестандартному мышлению</p>
+                <div class="product-card-mini__price">500</div>
+              </article>
+            </a>
+
+            <a class="product-card-mini-wrap" href="">
+              <article class="product-card-mini">
+                <h2 class="product-card-mini__title">Путеводитель по лжи</h2>
+                <img class="product-card-mini__img" src="img/book-putevoditel-po-lzhi.jpg" alt="book-putevoditel-po-lzhi">
+                <p class="product-card-mini__descr">Критическое мышление в эпоху постправды</p>
+                <div class="product-card-mini__price">630</div>
+              </article>
+            </a>
+
+            <a class="product-card-mini-wrap" href="">
+              <article class="product-card-mini">
+                <h2 class="product-card-mini__title">Дао физики</h2>
+                <img class="product-card-mini__img" src="img/book-dao-fiziki.jpg" alt="book-dao-fiziki">
+                <p class="product-card-mini__descr">Исследование параллелей между современной физикой и восточной философией</p>
+                <div class="product-card-mini__price">560</div>
+              </article>
+            </a>
+
+            <a class="product-card-mini-wrap" href="">
+              <article class="product-card-mini">
+                <h2 class="product-card-mini__title">Не очевидно</h2>
+                <img class="product-card-mini__img" src="img/book-ne-ochevidno.jpg" alt="book-ne-ochevidno">
+                <p class="product-card-mini__descr">Как выявлять тренды раньше других</p>
+                <div class="product-card-mini__price">365</div>
+              </article>
+            </a>
+
+            <a class="product-card-mini-wrap" href="">
+             <article class="product-card-mini">
+              <h2 class="product-card-mini__title">Суперпотребители</h2>
+              <img class="product-card-mini__img" src="img/book-superpotrebiteli.jpg" alt="book-superpotrebiteli">
+              <p class="product-card-mini__descr">Кто это и почему они так важны для вашего бизнеса</p>
               <div class="product-card-mini__price">500</div>
             </article>
           </a>
 
           <a class="product-card-mini-wrap" href="">
             <article class="product-card-mini">
-              <h2 class="product-card-mini__title">Путеводитель по лжи</h2>
-              <img class="product-card-mini__img" src="img/book-putevoditel-po-lzhi.jpg" alt="book-putevoditel-po-lzhi">
-              <p class="product-card-mini__descr">Критическое мышление в эпоху постправды</p>
+              <h2 class="product-card-mini__title">Маркетинг в социальных сетях</h2>
+              <img class="product-card-mini__img" src="img/book-social-media-marketing.jpg" alt="book-social-media-marketing">
+              <p class="product-card-mini__descr"></p>
               <div class="product-card-mini__price">630</div>
             </article>
           </a>
 
           <a class="product-card-mini-wrap" href="">
             <article class="product-card-mini">
-              <h2 class="product-card-mini__title">Дао физики</h2>
-              <img class="product-card-mini__img" src="img/book-dao-fiziki.jpg" alt="book-dao-fiziki">
-              <p class="product-card-mini__descr">Исследование параллелей между современной физикой и восточной философией</p>
+              <h2 class="product-card-mini__title">Правильный выбор</h2>
+              <img class="product-card-mini__img" src="img/book-pravilnyij-vyibor.jpg" alt="book-pravilnyij-vyibor">
+              <p class="product-card-mini__descr">Практическое руководство по принятию взвешенных решений</p>
               <div class="product-card-mini__price">560</div>
             </article>
           </a>
 
           <a class="product-card-mini-wrap" href="">
             <article class="product-card-mini">
-              <h2 class="product-card-mini__title">Не очевидно</h2>
-              <img class="product-card-mini__img" src="img/book-ne-ochevidno.jpg" alt="book-ne-ochevidno">
-              <p class="product-card-mini__descr">Как выявлять тренды раньше других</p>
+              <h2 class="product-card-mini__title">Главное в истории искусств</h2>
+              <img class="product-card-mini__img" src="img/book-glavnoe-v-istorii-iskusstv.jpg" alt="book-glavnoe-v-istorii-iskusstv">
+              <p class="product-card-mini__descr">Ключевые работы, темы, направления, техники</p>
               <div class="product-card-mini__price">365</div>
             </article>
           </a>
 
-          <a class="product-card-mini-wrap" href="">
-           <article class="product-card-mini">
-            <h2 class="product-card-mini__title">Суперпотребители</h2>
-            <img class="product-card-mini__img" src="img/book-superpotrebiteli.jpg" alt="book-superpotrebiteli">
-            <p class="product-card-mini__descr">Кто это и почему они так важны для вашего бизнеса</p>
-            <div class="product-card-mini__price">500</div>
-          </article>
-        </a>
-
-        <a class="product-card-mini-wrap" href="">
-          <article class="product-card-mini">
-            <h2 class="product-card-mini__title">Маркетинг в социальных сетях</h2>
-            <img class="product-card-mini__img" src="img/book-social-media-marketing.jpg" alt="book-social-media-marketing">
-            <p class="product-card-mini__descr"></p>
-            <div class="product-card-mini__price">630</div>
-          </article>
-        </a>
-
-        <a class="product-card-mini-wrap" href="">
-          <article class="product-card-mini">
-            <h2 class="product-card-mini__title">Правильный выбор</h2>
-            <img class="product-card-mini__img" src="img/book-pravilnyij-vyibor.jpg" alt="book-pravilnyij-vyibor">
-            <p class="product-card-mini__descr">Практическое руководство по принятию взвешенных решений</p>
-            <div class="product-card-mini__price">560</div>
-          </article>
-        </a>
-
-        <a class="product-card-mini-wrap" href="">
-          <article class="product-card-mini">
-            <h2 class="product-card-mini__title">Главное в истории искусств</h2>
-            <img class="product-card-mini__img" src="img/book-glavnoe-v-istorii-iskusstv.jpg" alt="book-glavnoe-v-istorii-iskusstv">
-            <p class="product-card-mini__descr">Ключевые работы, темы, направления, техники</p>
-            <div class="product-card-mini__price">365</div>
-          </article>
-        </a> -->
-
-      </div>
-    </div>
-
-    <div class="pagination">
-      <ul class="pagination__list">
-        <li class="pagination__item"><a href="" class="pagination__link">1</a></li>
-        <li class="pagination__item"><a href="" class="pagination__link">2</a></li>
-        <li class="pagination__item"><a href="" class="pagination__link">3</a></li>
-        <li class="pagination__item"><a href="" class="pagination__link">4</a></li>
-        <li class="pagination__item"><a href="" class="pagination__link">5</a></li>
-        <li class="pagination__item"><a href="" class="pagination__link">6</a></li>
-        <li class="pagination__item"><a href="" class="pagination__link">7</a></li>
-        <li class="pagination__item"><a href="" class="pagination__link">8</a></li>
-        <li class="pagination__item"><a href="" class="pagination__link">9</a></li>
-        <li class="pagination__item"><a href="" class="pagination__link">10</a></li>
-      </ul>
-    </div>
-  </section>
-
-
-  <section class="advantages">
-    <div class="advantages__inner">
-      <h2 class="advantages__title">Доставим в любое место</h2>
-      <span class="advantages__extra-title">ну почти в любое</span>
-
-      <div class="advantages__items">
-        <div class="advantages__item">
-          <p class="advantages__item-text">Покупаете книги на сайте в любимом формате — бумажные, электронные или аудио.</p>
-        </div>
-
-        <div class="advantages__item">
-          <p class="advantages__item-text">Мы подарим вам «Набор читателя» и добавим в посылку.</p>
-        </div>
-
-        <div class="advantages__item">
-          <p class="advantages__text">Бесплатно доставляем заказы от 3 000 по всей России.</p>
-        </div>item-
-
-        <div class="advantages__item">
-          <p class="advantages__item-text">Доставка в более чем 300 городов России, по Москве и Санкт-Петербургу — бесплатно.</p>
         </div>
       </div>
 
+      <div class="pagination">
+        <ul class="pagination__list">
+          <li class="pagination__item"><a href="" class="pagination__link">1</a></li>
+          <li class="pagination__item"><a href="" class="pagination__link">2</a></li>
+          <li class="pagination__item"><a href="" class="pagination__link">3</a></li>
+          <li class="pagination__item"><a href="" class="pagination__link">4</a></li>
+          <li class="pagination__item"><a href="" class="pagination__link">5</a></li>
+          <li class="pagination__item"><a href="" class="pagination__link">6</a></li>
+          <li class="pagination__item"><a href="" class="pagination__link">7</a></li>
+          <li class="pagination__item"><a href="" class="pagination__link">8</a></li>
+          <li class="pagination__item"><a href="" class="pagination__link">9</a></li>
+          <li class="pagination__item"><a href="" class="pagination__link">10</a></li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="advantages">
+      <div class="advantages__inner">
+        <h2 class="advantages__title">Доставим в любое место</h2>
+        <span class="advantages__extra-title">ну почти в любое</span>
+
+        <div class="advantages__items">
+          <div class="advantages__item">
+            <p class="advantages__item-text">Покупаете книги на сайте в любимом формате — бумажные, электронные или аудио.</p>
+          </div>
+
+          <div class="advantages__item">
+            <p class="advantages__item-text">Мы подарим вам «Набор читателя» и добавим в посылку.</p>
+          </div>
+
+          <div class="advantages__item">
+            <p class="advantages__text">Бесплатно доставляем заказы от 3 000 по всей России.</p>
+          </div>item-
+
+          <div class="advantages__item">
+            <p class="advantages__item-text">Доставка в более чем 300 городов России, по Москве и Санкт-Петербургу — бесплатно.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="new-books">
+      <div class="new-books__inner">
+        <h2 class="new-books__title">Наши новинки</h2>
+        <a class="new-books__all" href="">Все новинки</a>
+
+        <article class="product-card-mini">
+          <h2 class="product-card-mini__title">
+            <a class="product-card-mini__title-link" href="">Латеральная логика</a>
+          </h2>
+          <a class="product-card-mini__img-wrap">
+            <img class="product-card-mini__img" src="img/book-lateralnaya-logika.jpg" alt="book-lateralnaya-logika">
+          </a>
+          <p class="product-card-mini__descr">Головоломный путь к нестандартному мышлению</p>
+        </article>
+
+        <article class="product-card-mini">
+          <h2 class="product-card-mini__title">
+            <a class="product-card-mini__title-link" href="">Путеводитель по лжи</a>
+          </h2>
+          <a class="product-card-mini__img-wrap">
+            <img class="product-card-mini__img" src="img/book-putevoditel-po-lzhi.jpg" alt="book-putevoditel-po-lzhi">
+          </a>
+          <p class="product-card-mini__descr">Критическое мышление в эпоху постправды</p>
+        </article>
+
+        <article class="product-card-mini">
+          <h2 class="product-card-mini__title">
+            <a class="product-card-mini__title-link" href="">Дао физики</a>
+          </h2>
+          <a class="product-card-mini__img-wrap">
+            <img class="product-card-mini__img" src="img/book-dao-fiziki.jpg" alt="book-dao-fiziki">
+          </a>
+          <p class="product-card-mini__descr">Исследование параллелей между современной физикой и восточной философией</p>
+        </article>
+
+        <article class="product-card-mini">
+          <h2 class="product-card-mini__title">
+            <a class="product-card-mini__title-link" href="">Не очевидно</a>
+          </h2>
+          <a class="product-card-mini__img-wrap">
+            <img class="product-card-mini__img" src="img/book-ne-ochevidno.jpg" alt="book-ne-ochevidno">
+          </a>
+          <p class="product-card-mini__descr">Как выявлять тренды раньше других</p>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="page-footer">
+    <div class="page-footer__inner">
+
+      <a href="" class="logo"><img src="" alt="book store">book store</a>
+      <span class="working-hours">c 9:00 до 19:00</span>
+
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item sm-hidden">
+            <a class="main-nav__link" href="">Книги</a>
+          </li>
+          <li class="main-nav__item sm-hidden">
+            <a class="main-nav__link" href="">Рекомендации</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
     </div>
-  </section>
+  </footer>
 
 
-  <section class="new-books">
-    <div class="new-books__inner">
-      <h2 class="new-books__title">Наши новинки</h2>
-      <a class="new-books__all" href=""">Все новинки</a>
-
-      <article class="product-card-mini">
-        <h2 class="product-card-mini__title">
-          <a class="product-card-mini__title-link" href="">Латеральная логика</a>
-        </h2>
-        <a class="product-card-mini__img-wrap">
-          <img class="product-card-mini__img" src="img/book-lateralnaya-logika.jpg" alt="book-lateralnaya-logika">
-        </a>
-        <p class="product-card-mini__descr">Головоломный путь к нестандартному мышлению</p>
-      </article>
-
-      <article class="product-card-mini">
-        <h2 class="product-card-mini__title">
-          <a class="product-card-mini__title-link" href="">Путеводитель по лжи</a>
-        </h2>
-        <a class="product-card-mini__img-wrap">
-          <img class="product-card-mini__img" src="img/book-putevoditel-po-lzhi.jpg" alt="book-putevoditel-po-lzhi">
-        </a>
-        <p class="product-card-mini__descr">Критическое мышление в эпоху постправды</p>
-      </article>
-
-      <article class="product-card-mini">
-        <h2 class="product-card-mini__title">
-          <a class="product-card-mini__title-link" href="">Дао физики</a>
-        </h2>
-        <a class="product-card-mini__img-wrap">
-          <img class="product-card-mini__img" src="img/book-dao-fiziki.jpg" alt="book-dao-fiziki">
-        </a>
-        <p class="product-card-mini__descr">Исследование параллелей между современной физикой и восточной философией</p>
-      </article>
-
-      <article class="product-card-mini">
-        <h2 class="product-card-mini__title">
-          <a class="product-card-mini__title-link" href="">Не очевидно</a>
-        </h2>
-        <a class="product-card-mini__img-wrap">
-          <img class="product-card-mini__img" src="img/book-ne-ochevidno.jpg" alt="book-ne-ochevidno">
-        </a>
-        <p class="product-card-mini__descr">Как выявлять тренды раньше других</p>
-      </article>
-
-    </div>
-  </section>
-
-</main>
-
-
-<footer class="page-footer">
-  <div class="page-footer__inner">
-
-    <a href="" class="logo"><img src="" alt="book store">book store</a>
-    <span class="working-hours">c 9:00 до 19:00</span>
-
-    <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item sm-hidden">
-          <a class="main-nav__link" href="">Книги</a>
-        </li>
-        <li class="main-nav__item sm-hidden">
-          <a class="main-nav__link" href="">Рекомендации</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-
-  </div>
-</footer>
-
-
-<script type="module" src="./js/script.js"></script>
+  <script type="module" src="./js/script.js"></script>
 </body>
 
 </html>

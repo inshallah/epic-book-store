@@ -11,15 +11,15 @@ const del = require('del');
 
 function styles() {
   return src('./scss/style.scss')
-    .pipe(plumber())
-    .pipe(sourcemaps.init())
-    .pipe(sass())
-    .pipe(postcss([
-      autoprefixer({browsers: ['last 2 version']}),
+  .pipe(plumber())
+  .pipe(sourcemaps.init())
+  .pipe(sass())
+  .pipe(postcss([
+    autoprefixer({browsers: ['last 2 version']}),
     ]))
-    .pipe(sourcemaps.write('/'))
-    .pipe(dest('./css/'))
-    .pipe(browserSync.stream());
+  .pipe(sourcemaps.write('/'))
+  .pipe(dest('./css/'))
+  .pipe(browserSync.stream());
 }
 exports.styles = styles;
 
@@ -37,9 +37,9 @@ function serve() {
   watch([
     './scss/*.scss',
     './scss/blocks/*.scss',
-  ], { delay: 100 }, styles);
+    ], { delay: 100 }, styles);
   watch('./*.html').on('change', browserSync.reload);
-  watch('./js/*.js').on('change', browserSync.reload);
+  watch('./js/**/*.js').on('change', browserSync.reload);
 }
 
 exports.default = series(clean, styles, serve);

@@ -3,23 +3,64 @@ import insertElements from './modules/insertElements.js';
 import dataBooks from './modules/dataBooks.js';
 import bookCardTemplate from './modules/bookCardTemplate.js';
 
+const data = {
+  page: 1,
+  perPage: 8,
+  type: ''
+};
 
+const tabWrap = document.querySelector('.j-tabs');
+const tabsItemArray = Array.from(tabWrap.children);
 
-function ready(fn) {
-  if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading"){
-    fn();
-  } else {
-    document.addEventListener('DOMContentLoaded', fn);
-  }
-}
+tabsItemArray.forEach(function(tab) {
 
-ready(function(){
-  if (document.querySelector(bookCardTemplate.wrap)) {
-    const wrap = document.querySelector(bookCardTemplate.wrap);
-    insertElements(dataBooks.books, bookCardTemplate);
-  }
+  const link = tab.firstElementChild;
+  link.addEventListener('click', function(event) {
+    event.preventDefault();
+    data.type = event.target.dataset.type;
+
+    if (window.matchMedia("(min-width: 768px)").matches) {
+      data.perPage = 8;
+    } else {
+     data.perPage = 3;
+   };
+
+   const dataAjax = `https://api.do-epixx.ru/htmlpro/bookstore/books/get/${data.page}/${data.perPage}/${data.type}`;
+   sendRequest(dataAjax);
+ });
+
+  const type = link.dataset.type;
+
 });
 
+
+function sendRequest(data) {
+  let xhr = new XMLHttpRequest;
+
+  xhr.open('GET', data);
+  xhr.send();
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      const request = JSON.parse(xhr.responseText);
+
+      const wrap = document.querySelector(bookCardTemplate.wrap);
+      if (wrap.children) {
+        wrap.innerHTML = '';
+      }
+
+      if (document.querySelector(bookCardTemplate.wrap)) {
+        console.log(request)
+
+        insertElements(request.items, bookCardTemplate);
+      };
+
+    } else {
+      console.log(`Жду загрузки: ${xhr.readyState}`)
+    }
+
+  };
+
+};
 
 // const data = {
 //   books: [
