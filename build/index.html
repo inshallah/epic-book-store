@@ -57,6 +57,8 @@
     <div class="promo">
       <div class="promo__inner">
         <div class="slider">
+          <button class="slider-btn slider-btn__previous"></button>
+          <button class="slider-btn slider-btn__next"></button>
           <article class="slider__item">
             <div class="slider__item-descr">
               <h2 class="slider__item-news">Новое поступление книги «Симпсоны<br> и их математические секреты»</h2>
@@ -65,9 +67,9 @@
                 <a class="slider__item-more-about" href="">Хочу узнать о книге больше</a>
               </div>
             </div>
-
-            <img class="slider__item-img sm-hidden  md-hidden" src="img/book-simpsony-i-ih-matematicheskie-sekrety.jpg" alt="Simpsons book">
-
+            <div class="slider__item-img-wrap sm-hidden  md-hidden">
+              <img class="slider__item-img" src="img/book-simpsony-i-ih-matematicheskie-sekrety.jpg" alt="Simpsons book">
+            </div>
           </article>
         </div>
       </div>
@@ -103,22 +105,24 @@
 
         <div class="catalog__list-wrap">
           <div class="catalog__list  j-product-cards">
-<!--
+
             <a class="product-card-mini-wrap" href="#">
               <article class="product-card-mini">
                 <h2 class="product-card-mini__title">Латеральная логика</h2>
                 <img class="product-card-mini__img" src="img/book-lateralnaya-logika.jpg" alt="book-lateralnaya-logika">
                 <p class="product-card-mini__descr">Головоломный путь к нестандартному мышлению</p>
-                <div class="product-card-mini__price">500</div>
+                <div class="product-card-mini__price">500 ₽</div>
               </article>
             </a>
 
             <a class="product-card-mini-wrap" href="#">
               <article class="product-card-mini">
                 <h2 class="product-card-mini__title">Путеводитель по лжи</h2>
+
                 <img class="product-card-mini__img" src="img/book-putevoditel-po-lzhi.jpg" alt="book-putevoditel-po-lzhi">
+
                 <p class="product-card-mini__descr">Критическое мышление в эпоху постправды</p>
-                <div class="product-card-mini__price">630</div>
+                <div class="product-card-mini__price">630 ₽</div>
               </article>
             </a>
 
@@ -127,7 +131,7 @@
                 <h2 class="product-card-mini__title">Дао физики</h2>
                 <img class="product-card-mini__img" src="img/book-dao-fiziki.jpg" alt="book-dao-fiziki">
                 <p class="product-card-mini__descr">Исследование параллелей между современной физикой и восточной философией</p>
-                <div class="product-card-mini__price">560</div>
+                <div class="product-card-mini__price">560 ₽</div>
               </article>
             </a>
 
@@ -136,7 +140,7 @@
                 <h2 class="product-card-mini__title">Не очевидно</h2>
                 <img class="product-card-mini__img" src="img/book-ne-ochevidno.jpg" alt="book-ne-ochevidno">
                 <p class="product-card-mini__descr">Как выявлять тренды раньше других</p>
-                <div class="product-card-mini__price">365</div>
+                <div class="product-card-mini__price">365 ₽</div>
               </article>
             </a>
 
@@ -145,7 +149,7 @@
               <h2 class="product-card-mini__title">Суперпотребители</h2>
               <img class="product-card-mini__img" src="img/book-superpotrebiteli.jpg" alt="book-superpotrebiteli">
               <p class="product-card-mini__descr">Кто это и почему они так важны для вашего бизнеса</p>
-              <div class="product-card-mini__price">500</div>
+              <div class="product-card-mini__price">500 ₽</div>
             </article>
           </a>
 
@@ -154,7 +158,7 @@
               <h2 class="product-card-mini__title">Маркетинг в социальных сетях</h2>
               <img class="product-card-mini__img" src="img/book-social-media-marketing.jpg" alt="book-social-media-marketing">
               <p class="product-card-mini__descr"></p>
-              <div class="product-card-mini__price">630</div>
+              <div class="product-card-mini__price">630 ₽</div>
             </article>
           </a>
 
@@ -163,7 +167,7 @@
               <h2 class="product-card-mini__title">Правильный выбор</h2>
               <img class="product-card-mini__img" src="img/book-pravilnyij-vyibor.jpg" alt="book-pravilnyij-vyibor">
               <p class="product-card-mini__descr">Практическое руководство по принятию взвешенных решений</p>
-              <div class="product-card-mini__price">560</div>
+              <div class="product-card-mini__price">560 ₽</div>
             </article>
           </a>
 
@@ -172,9 +176,9 @@
               <h2 class="product-card-mini__title">Главное в истории искусств</h2>
               <img class="product-card-mini__img" src="img/book-glavnoe-v-istorii-iskusstv.jpg" alt="book-glavnoe-v-istorii-iskusstv">
               <p class="product-card-mini__descr">Ключевые работы, темы, направления, техники</p>
-              <div class="product-card-mini__price">365</div>
+              <div class="product-card-mini__price">365 ₽</div>
             </article>
-          </a> -->
+          </a>
 
         </div>
       </div>
@@ -199,23 +203,36 @@
       <div class="advantages__inner">
         <div class="advantages__inner-borders"></div>
         <h2 class="advantages__title">Доставим в любое место</h2>
-        <span class="advantages__extra-title">ну почти в любое</span>
-
+        <span class="advantages__extra-title">// ну почти в любое</span>
+        <div class="advantages__inner-border"></div>
         <div class="advantages__items">
+
           <div class="advantages__item">
-            <p class="advantages__item-text">Покупаете книги на сайте в любимом формате — бумажные, электронные или аудио.</p>
+            <img class="advantages__item-img" src="img/icon_book.svg" alt="">
+            <div class="advantages__item-text-wrap">
+              <p class="advantages__item-text">Покупаете книги на сайте в любимом формате — бумажные, электронные или аудио.</p>
+            </div>
           </div>
 
           <div class="advantages__item">
-            <p class="advantages__item-text">Мы подарим вам «Набор читателя» и добавим в посылку.</p>
+            <img class="advantages__item-img" src="img/icon_box.svg" alt="">
+            <div class="advantages__item-text-wrap">
+              <p class="advantages__item-text">Мы подарим вам «Набор читателя» и добавим в посылку.</p>
+            </div>
           </div>
 
           <div class="advantages__item">
-            <p class="advantages__item-text">Бесплатно доставляем заказы от 3 000 по всей России.</p>
+            <img class="advantages__item-img" src="img/icon_delivery.svg" alt="">
+            <div class="advantages__item-text-wrap">
+              <p class="advantages__item-text">Бесплатно доставляем заказы от 3 000 по всей России.</p>
+            </div>
           </div>
 
           <div class="advantages__item">
-            <p class="advantages__item-text">Доставка в более чем 300 городов России, по Москве и Санкт-Петербургу — бесплатно.</p>
+            <img class="advantages__item-img" src="img/icon_map.svg" alt="">
+            <div class="advantages__item-text-wrap">
+              <p class="advantages__item-text">Доставка в более чем 300 городов России, по Москве и Санкт-Петербургу — бесплатно.</p>
+            </div>
           </div>
         </div>
 
@@ -308,8 +325,8 @@
     </div>
   </footer>
 
-<!--
-  <script type="module" src="./js/script.js"></script> -->
+
+  <script type="module" src="./js/script.js"></script>
 </body>
 
 </html>
