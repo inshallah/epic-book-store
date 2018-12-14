@@ -19,6 +19,9 @@ const rename = require('gulp-rename');
 const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
 
+const ghpages = require('gh-pages');
+const path = require('path');
+
 function styles() {
   return src(`${dir.src}scss/style.scss`)
   .pipe(plumber())
@@ -64,6 +67,12 @@ function clean() {
   return src(dir.build)
   .pipe(plumber())
 }
+
+function deploy(cb) {
+  ghpages.publish(path.join(process.cwd(), dir.build), cb);
+}
+exports.deploy = deploy;
+
 
 function javascript() {
   return src(`${dir.src}js/script.js`)
