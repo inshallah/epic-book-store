@@ -19,7 +19,7 @@ $gray-lighter:                       #e4e4e4;
 $gray-dark:                          #231F20;
 
 
-$main-font-color:                    #000000;
+$gray-ultimate:                      #000000;
 
 $link-color:                         #1a1ff7;
 $link-color-hover:                   #6c73ff;
@@ -28,12 +28,15 @@ $link-color-used:                    #1316b0;
 $font-family:                        -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
 $font-size:                          14px;
 $font-size-md:                       16px;
+$font-size-bg:                       24px;
+$font-size-bg-x:                     30px;
 $font-size-lg:                       40px;
 $font-weight:                        400px;
 $font-weight-md:                     500px;
 $font-weight-bd:                     700px;
 $line-height:                        1.4;
 
+$transition-base:                    0.5s ease;
 
 $screen-xs:                          480px;
 $screen-sm:                          768px;

@@ -1,0 +1,35 @@
+.tabs {
+    display: flex;
+    margin: 0 0 0 50px;
+    list-style: none;
+
+    &__item:not(:last-child) {
+        margin-right: 51px;
+    }
+
+    &__link {
+        position: relative;
+        font-size: 16px;
+        font-weight: 500;
+        color: #000000;
+        transition: 0.5s ease;
+    }
+
+    &__link:hover {
+        color: #1a1ff7;
+        transition: 0.5s ease;
+    }
+
+    &__link:hover:before {
+        content: "";
+        position: absolute;
+        top: 30px;
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: #ef529f;
+        transition: 0.5s ease;
+    }
+}
+.j-tabs {
+}

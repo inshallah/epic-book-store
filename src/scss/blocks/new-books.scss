@@ -1,0 +1,35 @@
+.new-books {
+    position: relative;
+    margin-top: 100px;
+
+    &__background {
+        background-color: $rose-base;
+        position: absolute;
+        width: 100%;
+        height: 490px;
+        bottom: 0;
+        z-index: -2000;
+    }
+
+    &__inner {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 60px 68px 60px;
+    }
+
+    &__title {
+        font-size: $font-size-bg-x;
+        font-weight: $font-weight-bd;
+        color: $gray-ultimate;
+    }
+
+    &__all {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        bottom: 38px;
+        font-size: $font-size-md;
+        font-weight: $font-weight-md;
+        color: $link-color;
+    }
+}
