@@ -3,3 +3,18 @@
  *::after {
   box-sizing: inherit;
 }
+
+body {
+ margin: 0;
+ padding: 0;
+ font-family: $font-family;
+ font-size:  14px;
+ font-style: normal;
+ font-weight: 400;
+ background-color: #ffffff;
+ color: #000000;
+}
+
+a {
+  text-decoration: none;
+}

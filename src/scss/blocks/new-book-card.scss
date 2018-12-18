@@ -16,8 +16,8 @@
 
   &__img {
     order: -1;
-    max-width: 260px;
-    min-height: 370px;
+    max-width: 100%;
+    height: auto;
   }
 
   &__descr {

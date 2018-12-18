@@ -12,6 +12,12 @@
   &__left {
   }
 
+  &__working-hours {
+    margin-left: 33px;
+    font-size: $font-size;
+    color: $gray-base;
+  }
+
   &__right {
     display: flex;
   }
