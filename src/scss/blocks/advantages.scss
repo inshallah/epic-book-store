@@ -1,0 +1,43 @@
+.advantages {
+  margin-top: 120px;
+
+  &__inner {
+    position: relative;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 40px 18px 70px 25px;
+    border: 8px solid #e8e8e8;
+
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 5%;
+      top: -8px;
+      width: 31%;
+      border-bottom: 8px solid #ffffff;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 36%;
+      bottom: -8px;
+      width: 57%;
+      border-top: 8px solid #ffffff;
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-size: $font-size-bg-x;
+    font-weight: $font-weight-bd;
+    color: $gray-ultimate;
+  }
+
+  &__extra-title {
+    font-size: $font-size-md;
+    color: $gray-ultimate;
+  }
+}
+

@@ -1,0 +1,40 @@
+.tabs-list {
+  display: flex;
+  margin: 0 0 0 50px;
+  list-style: none;
+
+  &__item {
+
+    &:not(:last-child) {
+      margin-right: 51px;
+    }
+  }
+
+  &__link {
+    position: relative;
+    font-size: $font-size-md;
+    font-weight: $font-weight-md;
+    color: $gray-ultimate;
+    transition: $transition-base;
+
+    &:hover {
+      color: $link-color;
+      transition: $transition-base;
+    }
+
+    &:hover:before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      display: block;
+      width: 30px;
+      height: 3px;
+      background-color: $rose-bright;
+      transition: $transition-base;
+    }
+  }
+}
+
+.j-tabs {
+}
+

@@ -1,4 +1,4 @@
-.page-header {
+.page-footer {
 
   &__inner {
     display: flex;
@@ -6,7 +6,7 @@
     max-width: 1280px;
     margin: 0 auto;
     margin-top: 16px;
-    padding: 0 60px;
+    padding: 18px 60px;
   }
 
   &__left {
@@ -15,22 +15,7 @@
   &__right {
     display: flex;
   }
-
-  &__icons {
-  }
-
-  &__basket-link {
-    margin-right: 24px;
-  }
-
-  &__basket-img {
-  }
-
-  &__phone-link {
-  }
-
-  &__phone-img {
-    padding-bottom: 3px;
-  }
 }
+
+
 

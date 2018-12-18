@@ -1,0 +1,16 @@
+.catalog-list {
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 0 60px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+.j-product-cards {
+
+}

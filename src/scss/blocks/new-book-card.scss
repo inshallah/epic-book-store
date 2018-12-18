@@ -1,0 +1,28 @@
+.new-book-card {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+
+  &__inner {
+    display: inherit;
+    flex-direction: inherit;
+  }
+
+  &__title {
+    font-size: $font-size-bg;
+    font-weight: $font-weight-bd;
+    color: $gray-ultimate;
+  }
+
+  &__img {
+    order: -1;
+    max-width: 260px;
+    min-height: 370px;
+  }
+
+  &__descr {
+    font-size: $font-size-md;
+    font-style: italic;
+    color: $gray-ultimate;
+  }
+}

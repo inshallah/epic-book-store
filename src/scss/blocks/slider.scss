@@ -22,8 +22,8 @@
   }
 
   &__item-descr-wrap {
-    position: relative;
     content: "";
+    position: relative;
     max-width: 500px;
     border: 8px solid $gray-light;
     padding: 0 0 45px 30px;
@@ -52,83 +52,8 @@
   }
 }
 
-
-.slider-btn {
-  position: absolute;
-  top: 45%;
-  cursor: pointer;
-  color: transparent;
-  background: transparent;
-  border: none;
-  outline: none;
-}
-
-.slider-btn-previous{
-
-  @extend .slider-btn
-
-  &:before {
-    content: "";
-    position: absolute;
-    width: 42px;
-    height: 42px;
-    background-image: url(../img/slider_previous.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: $rose-base;
-    border-radius: 50%;
-    transition: $transition-base;
-  }
-}
-
-&__previous:hover:before {
-  content: "";
-  position: absolute;
-  width: 42px;
-  height: 42px;
-  background-image: url(../img/slider_previous-white.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: $rose-bright;
-  border-radius: 50%;
-  transform: rotate(180deg);
-  transition: $transition-base;
-}
-
-&__next {
-  left: 95%;
-}
-
-&__next:before {
-  content: "";
-  position: absolute;
-  width: 42px;
-  height: 42px;
-  background-image: url(../img/slider_next.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: $rose-base;
-  border-radius: 50%;
-  transition: $transition-base;
-}
-
-&__next:hover:before {
-  content: "";
-  position: absolute;
-  width: 42px;
-  height: 42px;
-  background-image: url(../img/slider_next-white.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: $rose-bright;
-  border-radius: 50%;
-  transform: rotate(180deg);
-  transition: $transition-base;
-}
-
-}
 .sm-hidden {
 }
-
 .md-hidden {
 }
+
