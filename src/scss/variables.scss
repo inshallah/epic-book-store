@@ -1,8 +1,4 @@
-/* $main-color:                         #7DCBCF;
-$main-color-dark:                    #4AA2A5;
-$second-color:                       #1F2455;
-$second-color-light:                 #6A4099; */
-
+//РОЗОВЫЙ ЦВЕТ
 $rose-base:                          #f4d4e4;
 $rose-light:                         #f4cee1;
 $rose-bright:                        #ef529f;
@@ -10,9 +6,7 @@ $rose-brighter:                      #ef56a1;
 $rose-dark:                          #d7569c;
 $rose-darker:                        #d72384;
 
-
-
-
+//СЕРЫЙ ЦВЕТ
 $gray-base:                          #828282;
 $gray-light:                         #e8e8e8;
 $gray-lighter:                       #e4e4e4;
@@ -20,9 +14,11 @@ $gray-light-ultimate:                #ffffff;
 $gray-dark:                          #231F20;
 $gray-ultimate:                      #000000;
 
+//ЦВЕТА СОСТОЯНИЙ ССЫЛОК
 $link-color:                         #1a1ff7;
 $link-color-hover:                   #6c73ff;
 $link-color-used:                    #1316b0;
+
 
 $font-family:                        Montserrat, sans-serif;
 $font-size:                          14px;
@@ -31,17 +27,21 @@ $font-size-md-x:                     20px;
 $font-size-bg:                       24px;
 $font-size-bg-x:                     30px;
 $font-size-lg:                       40px;
+
 $font-weight:                        400;
 $font-weight-md:                     600;
 $font-weight-bd:                     700;
+
 $line-height:                        24px;
 $line-height-md:                     30px;
 $line-height-md-x:                   40px;
 $line-height-lg:                     50px;
 
+
 $transition-base:                    0.5s ease;
 
-$screen-xs:                          480px;
+
+$screen-xs:                          320px;
 $screen-sm:                          768px;
 $screen-md:                          992px;
 $screen-lg:                          1200px;

@@ -1,7 +1,3 @@
-/* $main-color:                         #7DCBCF;
-$main-color-dark:                    #4AA2A5;
-$second-color:                       #1F2455;
-$second-color-light:                 #6A4099; */
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
@@ -61,7 +57,7 @@ a {
   max-width: 1280px;
   margin: 0 auto;
   margin-top: 16px;
-  padding: 0 3.2vw; }
+  padding: 0 60px; }
   @media (max-width: 768px) {
     .page-header__inner {
       max-width: 768px;
@@ -72,7 +68,7 @@ a {
       padding: 0 10px; } }
 
 .page-header__working-hours {
-  margin-left: 1.7vw;
+  margin-left: 30px;
   font-size: 14px;
   color: #828282; }
   @media (max-width: 768px) {
@@ -92,7 +88,7 @@ a {
     display: none; } }
 
 .page-header__basket-img {
-  margin-right: 1.8vw; }
+  margin-right: 20px; }
   @media (max-width: 768px) {
     .page-header__basket-img {
       margin-right: 10px; } }

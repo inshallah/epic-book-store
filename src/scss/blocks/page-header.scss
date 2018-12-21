@@ -7,31 +7,31 @@
     max-width: 1280px;
     margin: 0 auto;
     margin-top: 16px;
-    padding: 0 3.2vw;
+    padding: 0 60px;
 
 
-    @media (max-width: 768px) {
-      max-width: 768px;
+    @media (max-width: $screen-sm) {
+      max-width: $screen-sm;
       padding: 0 30px;
     }
 
-    @media (max-width: 320px) {
-      max-width: 320px;
+    @media (max-width: $screen-xs) {
+      max-width: $screen-xs;
       padding: 0 10px;
     }
   }
 
   &__working-hours {
-    margin-left: 1.7vw;
+    margin-left: 30px;
     font-size: $font-size;
     color: $gray-base;
 
 
-    @media (max-width: 768px) {
+    @media (max-width: $screen-sm) {
       margin-left: 10px;
     }
 
-    @media (max-width: 320px) {
+    @media (max-width: $screen-xs) {
       display: none;
     }
   }
@@ -44,17 +44,17 @@
   &__icons {
 
 
-   @media (max-width: 320px) {
+   @media (max-width: $screen-xs) {
      display: none;
    }
  }
 
 
  &__basket-img {
-   margin-right: 1.8vw;
+   margin-right: 20px;
 
 
-   @media (max-width: 768px) {
+   @media (max-width: $screen-sm) {
     margin-right: 10px;
   }
 }
