@@ -14,15 +14,23 @@
     color: $gray-ultimate;
   }
 
-  &__img {
-    order: -1;
-    max-width: 100%;
-    height: auto;
-  }
+  &__img-wrap {
+   order: -1;
+   width: 260px;
+   height: 370px;
+ }
 
-  &__descr {
-    font-size: $font-size-md;
-    font-style: italic;
-    color: $gray-ultimate;
-  }
+ &__img {
+  max-width: 100%;
+  height: auto;
 }
+
+&__descr {
+  margin-top: 0;
+  font-size: $font-size-md;
+  line-height: $line-height;
+  font-style: italic;
+  color: $gray-ultimate;
+}
+}
+

@@ -4,12 +4,36 @@
     display: flex;
     justify-content: space-between;
     max-width: 1280px;
+    box-sizing: border-box;
     margin: 0 auto;
     margin-top: 16px;
-    padding: 18px 60px;
+    padding: 18px 3.2vw;
+
+
+    @media (max-width: 768px) {
+      max-width: 768px;
+      padding: 0 30px;
+    }
+
+    @media (max-width: 320px) {
+      max-width: 320px;
+      padding: 0 10px;
+    }
   }
 
-  &__left {
+  &__working-hours {
+    margin-left: 1.7vw;
+    font-size: $font-size;
+    color: $gray-base;
+
+
+    @media (max-width: 768px) {
+      margin-left: 10px;
+    }
+
+    @media (max-width: 320px) {
+      display: none;
+    }
   }
 
   &__right {

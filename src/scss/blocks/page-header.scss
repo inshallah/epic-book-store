@@ -3,40 +3,66 @@
   &__inner {
     display: flex;
     justify-content: space-between;
+    box-sizing: border-box;
     max-width: 1280px;
     margin: 0 auto;
     margin-top: 16px;
-    padding: 0 60px;
-  }
+    padding: 0 3.2vw;
 
-  &__left {
+
+    @media (max-width: 768px) {
+      max-width: 768px;
+      padding: 0 30px;
+    }
+
+    @media (max-width: 320px) {
+      max-width: 320px;
+      padding: 0 10px;
+    }
   }
 
   &__working-hours {
-    margin-left: 33px;
+    margin-left: 1.7vw;
     font-size: $font-size;
     color: $gray-base;
+
+
+    @media (max-width: 768px) {
+      margin-left: 10px;
+    }
+
+    @media (max-width: 320px) {
+      display: none;
+    }
   }
+
 
   &__right {
     display: flex;
   }
 
   &__icons {
-  }
 
-  &__basket-link {
-    margin-right: 24px;
-  }
 
-  &__basket-img {
-  }
+   @media (max-width: 320px) {
+     display: none;
+   }
+ }
 
-  &__phone-link {
-  }
 
-  &__phone-img {
-    padding-bottom: 3px;
+ &__basket-img {
+   margin-right: 1.8vw;
+
+
+   @media (max-width: 768px) {
+    margin-right: 10px;
   }
 }
+
+
+&__phone-img {
+  padding-bottom: 3px;
+}
+}
+
 

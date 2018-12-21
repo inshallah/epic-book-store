@@ -1,10 +1,12 @@
 @import 'variables.scss';
 
-@import '../../node_modules/normalize-scss/sass/_normalize.scss';
+// @import '../../node_modules/normalize-scss/sass/_normalize.scss';
 
 @import 'blocks/fonts.scss';
 
 @import 'blocks/global.scss';
+@import 'blocks/page.scss';
+
 
 @import 'blocks/page-header.scss';
 @import 'blocks/main-nav.scss';
@@ -20,7 +22,6 @@
 @import 'blocks/pagination-list.scss';
 @import 'blocks/advantages.scss';
 @import 'blocks/new-books.scss';
-@import 'blocks/new-books-card-wrap.scss';
 @import 'blocks/new-book-card.scss';
 @import 'blocks/page-footer.scss';
 

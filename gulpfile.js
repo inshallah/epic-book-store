@@ -36,17 +36,24 @@ function styles() {
 }
 exports.styles = styles;
 
+
 function copyImg() {
   return src(`${dir.src}img/**/*.{jpg,jpeg,png,gif,svg,webp}`)
   .pipe(plumber())
   .pipe(dest(`${dir.build}img/`));
 };
 
+exports.copyImg = copyImg;
+
+
 function copyHTML() {
   return src(`${dir.src}*.html`)
   .pipe(plumber())
   .pipe(dest(dir.build));
 };
+
+exports.copyHTML = copyHTML;
+
 
 function copyFonts() {
   return src(`${dir.src}fonts/*.{woff2,woff}`)
@@ -56,11 +63,19 @@ function copyFonts() {
 
 exports.copyFonts = copyFonts;
 
-exports.copyHTML = copyHTML;
+
+function copyVendorsJs() {
+  return src([
+    './node_modules/picturefill/dist/picturefill.min.js',
+    ])
+  .pipe(plumber())
+  .pipe(dest(`${dir.build}js/`));
+};
+
+exports.copyVendorsJs = copyVendorsJs;
+
 
 exports.styles = styles;
-
-exports.copyImg = copyImg;
 
 
 function clean() {
@@ -134,6 +149,6 @@ function serve() {
 
   exports.default = series(
     clean,
-    parallel(styles, copyHTML, copyImg, copyFonts, javascript),
+    parallel(styles, copyHTML, copyImg, copyVendorsJs, copyFonts, javascript),
     serve
     );

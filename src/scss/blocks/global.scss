@@ -8,13 +8,13 @@ body {
  margin: 0;
  padding: 0;
  font-family: $font-family;
- font-size:  14px;
- font-style: normal;
- font-weight: 400;
- background-color: #ffffff;
- color: #000000;
+ font-size:  $font-size;
+ font-weight: $font-weight;
+ background-color: $gray-light-ultimate;
+ color: $gray-ultimate;
 }
 
 a {
   text-decoration: none;
 }
+

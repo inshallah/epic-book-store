@@ -2,6 +2,7 @@
   display: flex;
   margin: 0 0 0 50px;
   list-style: none;
+  padding-left: 3%;
 
   &__item {
 
@@ -22,7 +23,7 @@
       transition: $transition-base;
     }
 
-    &:hover:before {
+    &:active:before {
       content: "";
       position: absolute;
       top: 30px;

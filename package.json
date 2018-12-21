@@ -34,5 +34,9 @@
     "slick-carousel": "^1.8.1",
     "webpack": "^4.27.1",
     "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+    "husky": "^1.2.1",
+    "picturefill": "^3.0.3"
   }
 }

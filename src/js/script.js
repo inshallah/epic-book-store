@@ -4,6 +4,7 @@ import dataBooks from './modules/dataBooks.js';
 import bookCardTemplate from './modules/bookCardTemplate.js';
 import sendRequest from './modules/sendRequest.js'
 
+
 const data = {
   page: 1,
   perPage: 8,
