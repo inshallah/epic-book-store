@@ -1,12 +1,10 @@
 .main-nav {
-  margin-right: 4.2vw;
 
-
-  @media (max-width: 768px) {
+  @media (max-width: $screen-sm) {
     margin-right: 15px;
   }
 
-  @media (max-width: 320px) {
+  @media (max-width: $screen-xs) {
     display: none;
   }
 

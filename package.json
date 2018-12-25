@@ -27,6 +27,8 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.1",
+    "gulp-svgmin": "^2.1.0",
+    "gulp-svgstore": "^7.0.1",
     "gulp-uglify": "^3.0.1",
     "jquery": "^3.3.1",
     "normalize-scss": "^7.0.1",
@@ -36,7 +38,9 @@
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
+    "google-maps": "^3.3.0",
     "husky": "^1.2.1",
-    "picturefill": "^3.0.3"
+    "picturefill": "^3.0.3",
+    "svg4everybody": "^2.1.9"
   }
 }

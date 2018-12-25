@@ -1,5 +1,6 @@
 .new-books {
   position: relative;
+  width: 100%;
   margin-top: 90px;
 
   &__background {
@@ -15,16 +16,16 @@
     max-width: 1280px;
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 0 3.2vw 80px 3.2vw;
+    padding: 0 60px 80px 60px;
 
 
-    @media (max-width: 768px) {
-      max-width: 768px;
+    @media (max-width: $screen-sm) {
+      max-width: $screen-sm;
       padding: 0 30px 80px;
     }
 
-    @media (max-width: 320px) {
-      max-width: 320px;
+    @media (max-width: $screen-xs) {
+      max-width: $screen-xs;
       padding: 0 10px 80px;
     }
   }
@@ -45,7 +46,7 @@
     color: $link-color;
 
 
-    @media (max-width: 320px) {
+    @media (max-width: $screen-xs) {
       display: block;
       bottom: 15px;
       font-size: $font-size;

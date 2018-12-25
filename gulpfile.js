@@ -21,6 +21,8 @@ const webpackStream = require('webpack-stream');
 
 const ghpages = require('gh-pages');
 const path = require('path');
+const svgstore = require('gulp-svgstore');
+const svgmin = require('gulp-svgmin');
 
 function styles() {
   return src(`${dir.src}scss/style.scss`)
@@ -41,16 +43,33 @@ function copyImg() {
   return src(`${dir.src}img/**/*.{jpg,jpeg,png,gif,svg,webp}`)
   .pipe(plumber())
   .pipe(dest(`${dir.build}img/`));
-};
+}
 
 exports.copyImg = copyImg;
+
+
+function buildSvgSprite() {
+  return src(`${dir.src}svg-sprites/*.svg`)
+  .pipe(svgmin(function (file) {
+    return {
+      plugins: [{
+        cleanupIDs: { minify: true }
+      }]
+    }
+  }))
+  .pipe(svgstore({ inlineSvg: true }))
+  .pipe(rename('sprite.svg'))
+  .pipe(dest(`${dir.build}img/`));
+}
+
+exports.buildSvgSprite = buildSvgSprite;
 
 
 function copyHTML() {
   return src(`${dir.src}*.html`)
   .pipe(plumber())
   .pipe(dest(dir.build));
-};
+}
 
 exports.copyHTML = copyHTML;
 
@@ -59,7 +78,7 @@ function copyFonts() {
   return src(`${dir.src}fonts/*.{woff2,woff}`)
   .pipe(plumber())
   .pipe(dest(`${dir.build}fonts/`));
-};
+}
 
 exports.copyFonts = copyFonts;
 
@@ -67,15 +86,14 @@ exports.copyFonts = copyFonts;
 function copyVendorsJs() {
   return src([
     './node_modules/picturefill/dist/picturefill.min.js',
+    './node_modules/svg4everybody/dist/svg4everybody.min.js',
     ])
   .pipe(plumber())
   .pipe(dest(`${dir.build}js/`));
-};
+}
 
 exports.copyVendorsJs = copyVendorsJs;
 
-
-exports.styles = styles;
 
 
 function clean() {
@@ -142,13 +160,18 @@ function serve() {
     browserSync.reload
     ));
 
+  watch(`${dir.src}svg-sprites/*.svg`).on('change', series(
+    buildSvgSprite,
+    browserSync.reload
+    ));
+
   exports.build = series(
     clean,
-    parallel(styles, copyHTML, copyImg, copyFonts, javascript)
+    parallel(styles, copyHTML, copyImg, buildSvgSprite, copyFonts, javascript)
     );
 
   exports.default = series(
     clean,
-    parallel(styles, copyHTML, copyImg, copyVendorsJs, copyFonts, javascript),
+    parallel(styles, copyHTML, copyImg, buildSvgSprite, copyVendorsJs, copyFonts, javascript),
     serve
     );

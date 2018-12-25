@@ -1,20 +1,21 @@
 .tabs {
+  width: 100%;
   background-color: $gray-light;
 
   &__inner {
     max-width: 1280px;
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 25px 2.5vw 7px 2.5vw;
+    padding: 25px 60px 7px 60px;
 
 
-    @media (max-width: 768px) {
-      max-width: 768px;
+    @media (max-width: $screen-sm) {
+      max-width: $screen-sm;
       padding: 25px 0 7px;
     }
 
-    @media (max-width: 320px) {
-      max-width: 320px;
+    @media (max-width: $screen-xs) {
+      max-width: $screen-xs;
       padding: 25px 0 7px;
     }
   }

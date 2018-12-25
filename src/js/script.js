@@ -1,9 +1,7 @@
 
 import insertElements from './modules/insertElements.js';
-import dataBooks from './modules/dataBooks.js';
 import bookCardTemplate from './modules/bookCardTemplate.js';
-import sendRequest from './modules/sendRequest.js'
-
+import sendRequest from './modules/sendRequest.js';
 
 const data = {
   page: 1,

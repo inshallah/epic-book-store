@@ -1,0 +1,40 @@
+.contacts {
+  width: 100%;
+  margin-top: 65px;
+
+
+  &__inner {
+    max-width: 1280px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 60px;
+  }
+
+  &__title {
+    font-size: $font-size-lg-x;
+  }
+
+  &__info {
+    display: flex;
+    width: 100%;
+    font-size:$font-size-md;
+    font-weight:$font-weight-md;
+    list-style-type: blue;
+  }
+
+  &__address {
+    margin-right: 95px;
+  }
+
+  &__hours {
+    margin-right: 55px;
+  }
+
+  &__phone {
+
+  }
+
+  &__phone-link {
+
+  }
+}

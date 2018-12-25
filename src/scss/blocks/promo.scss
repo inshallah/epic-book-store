@@ -1,8 +1,8 @@
 .promo {
+  width: 100%;
   margin-top: 65px;
 
-
-  @media (max-width: 320px) {
+  @media (max-width: $screen-xs) {
     margin-top: 50px;
   }
 
@@ -10,16 +10,16 @@
     max-width: 1280px;
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 0 3.2vw;
+    padding: 0 60px;
 
 
-    @media (max-width: 768px) {
-      max-width: 768px;
+    @media (max-width: $screen-sm) {
+      max-width: $screen-sm;
       padding: 0 30px;
     }
 
-    @media (max-width: 320px) {
-      max-width: 320px;
+    @media (max-width: $screen-xs) {
+      max-width: $screen-xs;
       padding: 0 10px;
     }
   }
