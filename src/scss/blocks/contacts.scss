@@ -1,6 +1,7 @@
 .contacts {
   width: 100%;
-  margin-top: 65px;
+  padding-top: 60px;
+  background-color: $gray-lightest;
 
 
   &__inner {
@@ -8,33 +9,69 @@
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0 60px;
+
+
+    @media (max-width: $screen-sm) {
+      max-width: $screen-sm;
+      padding: 0 30px;
+    }
+
+    @media (max-width: $screen-xs) {
+      max-width: $screen-xs;
+      padding: 0 15px;
+    }
   }
 
   &__title {
+    margin: 0;
     font-size: $font-size-lg-x;
   }
 
   &__info {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
+    margin: 0;
+    padding-left: 20px;
     font-size:$font-size-md;
     font-weight:$font-weight-md;
-    list-style-type: blue;
+    opacity: 0.7;
+
+
+    @media (max-width: $screen-xs) {
+      font-size: $font-size;
+    }
+
   }
 
   &__address {
     margin-right: 95px;
+    padding-top: 20px;
+
+    @media (max-width: $screen-xs-s) and (min-width: $screen-xs)  {
+      margin: 0;
+    }
   }
 
   &__hours {
     margin-right: 55px;
+    padding-top: 20px;
+
+    @media (max-width: $screen-xs-s) and (min-width: $screen-xs)  {
+      margin: 0;
+    }
   }
 
   &__phone {
+    padding-top: 20px;
 
+    @media (max-width: $screen-md) {
+      width: 100%;
+      // padding-top: 20px;
+    }
   }
 
   &__phone-link {
-
+    color: inherit;
   }
 }

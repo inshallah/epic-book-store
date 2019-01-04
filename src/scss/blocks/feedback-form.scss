@@ -3,27 +3,47 @@
   display: flex;
   flex-wrap: wrap;
 
+  @media (max-width: $screen-xs) {
+    flex-direction: column;
+  }
+
+
   &__mail {
-    width: 360px;
+    width: 30%;
     border: none;
     outline: none;
     margin-right: 35px;
     border-bottom: 5px solid $gray-light;
+    background-color: inherit;
+
+    @media (min-width: $screen-xs) and (max-width: $screen-sm) {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+
 
     &::placeholder {
       position: relative;
-      bottom: -10px;
+      // bottom: -10px;
       color: $gray-base-light;
       font-size: $font-size-md;
     }
   }
 
   &__message {
-    width: 360px;
+    width: 30%;
     border: none;
     outline: none;
     margin-right: 35px;
     border-bottom: 5px solid $gray-light;
+    background-color: inherit;
+
+    @media (min-width: $screen-xs) and (max-width: $screen-sm){
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
 
     &::placeholder {
       position: relative;
@@ -34,7 +54,8 @@
   }
 
   &__submit {
-    width: 360px;
+    width: 30%;
+    margin-top: 30px;
     padding:15px 0;
     border: none;
     outline: none;
@@ -42,6 +63,16 @@
     font-weight: $font-weight-bd;
     color: $gray-light-ultimate;
     background-color: $gray-ultimate;
+
+    @media (min-width: $screen-xs) and (max-width: $screen-sm) {
+      order: 1;
+      width: 360px;
+      font-size: ($font-size-md)-2;
+    }
+
+    @media (max-width: $screen-xs) {
+      width: 100%;
+    }
 
   }
 
@@ -63,13 +94,15 @@
     display: inline-block;
     width: 20px;
     height: 20px;
-    z-index: -1;
+    z-index: 3;
     margin-right: 4px;
     border: 4px solid $gray-light;
+    transition: $transition-base;
 
 
     &:hover {
       border-color: $rose-dark;
+      transition: $transition-base;
     }
   }
 
