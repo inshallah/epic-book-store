@@ -1,0 +1,38 @@
+.add-to-basket {
+
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 50px;
+
+  &__btn {
+    width: 260px;
+    margin-right: 20px;
+    padding: 18px 0;
+    font-size: $font-size-md;
+    font-weight: $font-weight-bd;
+    background-color: $gray-ultimate;
+    color: $gray-light-ultimate;
+    border: none;
+    outline: none;
+  }
+
+  &__goods-in-basket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    font-size: $font-size-md;
+    font-weight: $font-weight-md;
+    color: $gray-dark-md;
+    background-color: $gray-dark-s;
+  }
+
+  &__goods-in-basket__unit {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    font-size: $font-size-md;
+    font-weight: $font-weight-md;
+    color: $gray-dark-md;
+  }
+}

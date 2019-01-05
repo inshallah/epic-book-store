@@ -54,12 +54,12 @@
   </header>
 
 
-  <main>
+  <main class="main-background">
     <article class="book-profile">
       <div class="book-profile__inner">
 
 
-       <!--        <div class="book-profile__pages"> -->
+
         <div class="book-profile__demo-pages">
           <div class="book-profile__demo-pages-inner">
             <img class="book-profile__demo-pages-page" src="img/promo-page-1.jpg" alt="Демонстрационная страница 1">
@@ -71,175 +71,201 @@
         <div class="book-profile__cover-page">
           <img class="book-profile__cover-page-img" src="img/book-superpotrebiteli.jpg" alt="">
         </div>
-      <!--   </div>
-      -->
-      <div class="book-profile__info">
 
-        <div class="book-profile__headings">
-          <span class="book-profile__author">Эдди Юн</span>
-          <h1 class="book-profile__title">Суперпотребители</h1>
-          <p class="book-profile__slogan">Кто это и почему они так важны для вашего бизнеса</p>
-        </div>
+        <div class="book-profile__info">
 
-
-        <div class="book-profile__tech-info">
-          <div class="book-profile__tech-info-items">
-            <div class="book-profile__tech-info-item book-profile__tech-info-articul">Артикул</div>
-            <div class="book-profile__tech-info-item book-profile__tech-info-availability">В наличии</div>
-            <div class="book-profile__tech-info-item book-profile__tech-info-publish">Издательство</div>
-            <div class="book-profile__tech-info-item book-profile__tech-info-price">Цена</div>
+          <div class="book-profile__headings">
+            <span class="book-profile__author">Эдди Юн</span>
+            <h1 class="book-profile__title">Суперпотребители</h1>
+            <p class="book-profile__slogan">Кто это и почему они так важны для вашего бизнеса</p>
           </div>
 
-          <div class="book-profile__tech-info-values">
-            <div class="book-profile__tech-info-item book-profile__tech-info-articul-value">1090763</div>
-            <div class="book-profile__tech-info-item book-profile__tech-info-availability-value">5
-              <span class="book-profile__tech-info-availability-unit">шт.</span>
+
+          <div class="book-profile__tech-info">
+            <div class="book-profile__tech-info-items">
+              <div class="book-profile__tech-info-item">Артикул</div>
+              <div class="book-profile__tech-info-item">В наличии</div>
+              <div class="book-profile__tech-info-item">Издательство</div>
+              <div class="book-profile__tech-info-item">Цена</div>
             </div>
-            <div class="book-profile__tech-info-item book-profile__tech-info-publish-value">Издал</div>
-            <div class="book-profile__tech-info-item book-profile__tech-info-price-value">800 ₽</div>
+
+            <div class="book-profile__tech-info-values">
+              <div class="book-profile__tech-info-item">1090763</div>
+              <div class="book-profile__tech-info-item">5
+                <span class="book-profile__tech-info-availability-unit">шт.</span>
+              </div>
+              <div class="book-profile__tech-info-item">Издал</div>
+              <div class="book-profile__tech-info-item book-profile__tech-info-item--price">800 ₽</div>
+            </div>
           </div>
-        </div>
 
 
-        <div class="add-to-basket">
-          <button class="add-to-basket__btn">Добавить в корзину</button>
-          <div class="goods-in-basket">1
-            <span class="goods-in-basket__unit">шт.</span>
+          <div class="add-to-basket">
+            <button class="add-to-basket__btn">Добавить в корзину</button>
+            <div class="add-to-basket__goods-in-basket">1 </div>
+            <span class="add-to-basket__goods-in-basket__unit">шт.</span>
           </div>
-        </div>
 
-        <div class="user-likes">
-          <img class="user-likes__img" src="" alt="Иконка-сердечко: лайк пользователя">
-          <span class="user-likes__counts">20</span>
-          <span class="user-likes__text">людям понравилась эта книга</span>
+          <div class="book-profile__user-likes">
+            <svg width="16" height="12">
+              <use xlink:href="img/sprite.svg#icon_like"></use>
+            </svg>
+            <span class="book-profile__user-likes-counts">20</span>
+            <span class="book-profile__user-likes-text">людям понравилась эта книга</span>
+          </div>
         </div>
 
         <div class="book-profile__description">
           <h2 class="book-profile__description-title">Короткое описание</h2>
-          <p class="book-profile__description-text">В отличие от обычных покупателей суперпотребителиочень заинтересованы в ваших товарах, а возможно, даже слегка помешаны на них.</p>
+          <p class="book-profile__description-text">В отличие от обычных покупателей суперпотребители очень заинтересованы в ваших товарах, а возможно, даже слегка помешаны на них.</p>
           <p class="book-profile__description-text">Они знают о кроссовках все и имеют десятки пар. Они спортивные фанаты с копиями футболок любимой команды. А стены их гаражей украшены подписанной символикой.</p>
-          <a href="" class="book-profile__description-full">Показать полностью</a>
+          <a href="#" class="book-profile__description-full">Показать полностью</a>
+          <svg width="12" height="12" style="vertical-align: bottom;">
+            <use xlink:href="img/sprite.svg#arrow_down"></use>
+          </svg>
         </div>
 
-        <div class="social-links-shared">
-          <ul class="social-links-list">
-            <li class="social-link"></li>
-            <li class="social-link"></li>
-            <li class="social-link"></li>
-            <li class="social-link"></li>
+        <div class="book-profile__social-links-shared">
+          <ul class="book-profile__social-links-list">
+            <li class="book-profile__social-link">
+              <svg width="22" height="22">
+                <use xlink:href="img/sprite.svg#icon_facebook"></use>
+              </svg>
+              <span class="book-profile__shared-count">15</span>
+            </li>
+
+            <li class="book-profile__social-link">
+              <svg width="22" height="22">
+                <use xlink:href="img/sprite.svg#icon_vkontakte"></use>
+              </svg>
+              <span class="book-profile__shared-count">4</span>
+            </li>
+
+            <li class="book-profile__social-link">
+              <svg width="22" height="22">
+                <use xlink:href="img/sprite.svg#icon_thumbs_up"></use>
+              </svg>
+              <span class="book-profile__shared-count">150</span>
+            </li>
+
+            <li class="book-profile__social-link">
+              <svg width="22" height="22">
+                <use xlink:href="img/sprite.svg#icon_thumbs_down"></use>
+              </svg>
+              <span class="book-profile__shared-count">0</span>
+            </li>
           </ul>
         </div>
 
+
+      </div>
+    </article>
+
+
+    <section class="new-books">
+      <div class="new-books__background"></div>
+      <div class="new-books__inner">
+        <h2 class="new-books__title">Наши новинки</h2>
+        <a class="new-books__all" href="#">Все новинки</a>
+
+        <div class="new-books__wrap">
+          <article class="new-book-card">
+            <a href="" class="new-book-card__inner">
+              <h2 class="new-book-card__title">
+                Латеральная логика
+              </h2>
+              <div class="new-book-card__img-wrap">
+                <img class="new-book-card__img" src="img/book-lateralnaya-logika.jpg" alt="book-lateralnaya-logika">
+              </div>
+              <p class="new-book-card__descr">Головоломный путь к нестандартному мышлению</p>
+            </a>
+          </article>
+
+          <article class="new-book-card">
+            <a href="" class="new-book-card__inner">
+              <h2 class="new-book-card__title">
+                Путеводитель по лжи
+              </h2>
+              <div class="new-book-card__img-wrap">
+                <img class="new-book-card__img" src="img/book-putevoditel-po-lzhi.jpg" alt="book-putevoditel-po-lzhi">
+              </div>
+              <p class="new-book-card__descr">Критическое мышление в эпоху постправды</p>
+            </a>
+          </article>
+
+          <article class="new-book-card">
+            <a href="" class="new-book-card__inner">
+              <h2 class="new-book-card__title">
+                Дао физики
+              </h2>
+              <div class="new-book-card__img-wrap">
+                <img class="new-book-card__img" src="img/book-dao-fiziki.jpg" alt="book-dao-fiziki">
+              </div>
+              <p class="new-book-card__descr">Исследование параллелей между современной физикой и восточной философией</p>
+            </a>
+          </article>
+
+          <article class="new-book-card">
+            <a href="" class="new-book-card__inner">
+              <h2 class="new-book-card__title">
+                Не очевидно
+              </h2>
+              <div class="new-book-card__img-wrap">
+                <img class="new-book-card__img" src="img/book-ne-ochevidno.jpg" alt="book-ne-ochevidno">
+              </div>
+              <p class="new-book-card__descr">Как выявлять тренды раньше других</p>
+            </a>
+          </article>
+        </div>
+
+
+      </div>
+    </section>
+
+
+
+    <section class="promo-library">
+      <div class="promo-library__inner">
+        <h2 class="promo-library__title">Мы открыли для вас уютную библиотеку</h2>
+        <p class="promo-library__info">Приходите к нам по адресу Никитская 10, каждый день с 12:00 до 18:00</p>
+      </div>
+    </section>
+
+  </main>
+
+
+
+  <footer class="page-footer">
+    <div class="page-footer__inner">
+
+      <div class="page-footer__left">
+        <a href="#" class="logo">
+          <img src="img/logo-pic.jpg" alt="book store">
+        </a>
+        <span class="page-footer__working-hours">c 9:00 до 19:00</span>
+      </div>
+
+      <div class="page-footer__right">
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item  sm-hidden">
+              <a class="main-nav__link" href="#">Книги</a>
+            </li>
+            <li class="main-nav__item sm-hidden">
+              <a class="main-nav__link" href="#">Рекомендации</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
       </div>
 
     </div>
-  </article>
+  </footer>
 
 
-  <section class="new-books">
-    <div class="new-books__background"></div>
-    <div class="new-books__inner">
-      <h2 class="new-books__title">Наши новинки</h2>
-      <a class="new-books__all" href="#">Все новинки</a>
-
-      <div class="new-books__wrap">
-        <article class="new-book-card">
-          <a href="" class="new-book-card__inner">
-            <h2 class="new-book-card__title">
-              Латеральная логика
-            </h2>
-            <div class="new-book-card__img-wrap">
-              <img class="new-book-card__img" src="img/book-lateralnaya-logika.jpg" alt="book-lateralnaya-logika">
-            </div>
-            <p class="new-book-card__descr">Головоломный путь к нестандартному мышлению</p>
-          </a>
-        </article>
-
-        <article class="new-book-card">
-          <a href="" class="new-book-card__inner">
-            <h2 class="new-book-card__title">
-              Путеводитель по лжи
-            </h2>
-            <div class="new-book-card__img-wrap">
-              <img class="new-book-card__img" src="img/book-putevoditel-po-lzhi.jpg" alt="book-putevoditel-po-lzhi">
-            </div>
-            <p class="new-book-card__descr">Критическое мышление в эпоху постправды</p>
-          </a>
-        </article>
-
-        <article class="new-book-card">
-          <a href="" class="new-book-card__inner">
-            <h2 class="new-book-card__title">
-              Дао физики
-            </h2>
-            <div class="new-book-card__img-wrap">
-              <img class="new-book-card__img" src="img/book-dao-fiziki.jpg" alt="book-dao-fiziki">
-            </div>
-            <p class="new-book-card__descr">Исследование параллелей между современной физикой и восточной философией</p>
-          </a>
-        </article>
-
-        <article class="new-book-card">
-          <a href="" class="new-book-card__inner">
-            <h2 class="new-book-card__title">
-              Не очевидно
-            </h2>
-            <div class="new-book-card__img-wrap">
-              <img class="new-book-card__img" src="img/book-ne-ochevidno.jpg" alt="book-ne-ochevidno">
-            </div>
-            <p class="new-book-card__descr">Как выявлять тренды раньше других</p>
-          </a>
-        </article>
-      </div>
-
-
-    </div>
-  </section>
-
-
-
-  <section class="promo-library">
-    <div class="promo-library__inner">
-      <h2 class="promo-library__title">Мы открыли для вас уютную библиотеку</h2>
-      <p class="promo-library__info">Приходите к нам по адресу Никитская 10, каждый день с 12:00 до 18:00</p>
-    </div>
-  </section>
-
-</main>
-
-
-
-<footer class="page-footer">
-  <div class="page-footer__inner">
-
-    <div class="page-footer__left">
-      <a href="#" class="logo">
-        <img src="img/logo-pic.jpg" alt="book store">
-      </a>
-      <span class="page-footer__working-hours">c 9:00 до 19:00</span>
-    </div>
-
-    <div class="page-footer__right">
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item  sm-hidden">
-            <a class="main-nav__link" href="#">Книги</a>
-          </li>
-          <li class="main-nav__item sm-hidden">
-            <a class="main-nav__link" href="#">Рекомендации</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-
-  </div>
-</footer>
-
-
-<!-- <script type="module" src="./js/script.js"></script> -->
+  <!-- <script type="module" src="./js/script.js"></script> -->
 </body>
 
 </html>

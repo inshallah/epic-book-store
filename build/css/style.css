@@ -43,6 +43,11 @@ a {
 .contacts-main {
   background-color: #f5f5f5; }
 
+.main-background {
+  position: relative;
+  z-index: -10;
+  background-color: #f5f5f5; }
+
 .page {
   font-family: Montserrat, sans-serif;
   -webkit-box-sizing: border-box;
@@ -786,7 +791,8 @@ a {
 
 .feedback {
   width: 100%;
-  margin-top: 55px; }
+  margin-top: 55px;
+  margin-bottom: 50px; }
   .feedback__outter {
     max-width: 1280px;
     -webkit-box-sizing: border-box;
@@ -939,51 +945,146 @@ a {
 
 .promo-library {
   width: 100%;
-  margin-top: 45px;
-  background-image: url(""); }
+  height: 313px;
+  background-image: url("../../img/library-background.jpg");
+  background-position: center -140px;
+  background-repeat: no-repeat;
+  background-color: rgba(215, 86, 156, 0.8); }
   .promo-library__inner {
+    position: relative;
+    height: inherit;
     max-width: 1280px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin: 0 auto;
-    padding: 0 60px; }
+    padding: 0 60px;
+    background-color: rgba(215, 86, 156, 0.8); }
+    .promo-library__inner:before {
+      content: "";
+      position: absolute;
+      z-index: 3;
+      width: 70px;
+      height: 20px;
+      background-image: url("../../svg-sprites/wave-shape.svg"); }
+    @media (max-width: 767px) and (min-width: 320px) {
+      .promo-library__inner {
+        padding: 0 10px; } }
+  .promo-library__title {
+    position: relative;
+    z-index: 3;
+    top: 113px;
+    margin: 0;
+    text-align: center;
+    font-size: 36px;
+    color: #ffffff; }
+    @media (max-width: 490px) and (min-width: 320px) {
+      .promo-library__title {
+        top: 80px;
+        font-size: 24px;
+        line-height: 40px; } }
+  .promo-library__info {
+    position: relative;
+    z-index: 3;
+    top: 120px;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff; }
+    @media (max-width: 490px) and (min-width: 320px) {
+      .promo-library__info {
+        top: 90px;
+        line-height: 30px; } }
 
 .book-profile {
-  padding-top: 40px;
-  background-color: #f5f5f5; }
+  padding-top: 40px; }
   .book-profile__inner {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 160px 360px auto;
-    grid-template-columns: 160px 360px auto;
-    -ms-grid-rows: 480px 350px;
-    grid-template-rows: 480px 350px;
+    -ms-grid-columns: 280px 460px;
+    grid-template-columns: 280px 460px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     grid-column-gap: 35px;
-    justify-items: center;
-    max-width: 1280px;
+    grid-row-gap: 22px;
     margin: 0 auto;
-    padding: 0 60px; }
+    padding: 0 40px; }
+    @media (min-width: 1200px) {
+      .book-profile__inner {
+        -ms-grid-columns: 160px 360px auto;
+        grid-template-columns: 160px 360px auto;
+        grid-row-gap: 40px;
+        max-width: 1280px;
+        padding: 0 60px; } }
   .book-profile__demo-pages {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     height: -webkit-fit-content;
     height: -moz-fit-content;
-    height: fit-content;
-    text-align: center;
-    border: 4px solid #e8e8e8; }
+    height: fit-content; }
+    @media (min-width: 1200px) {
+      .book-profile__demo-pages {
+        text-align: center; } }
   .book-profile__demo-pages-inner {
-    padding: 17px 15px; }
-  .book-profile__demo-pages-page:not:last-child {
-    margin-bottom: 11px; }
+    padding: 13px 8px 10px 8px;
+    border: 4px solid #e8e8e8; }
+    @media (min-width: 1200px) {
+      .book-profile__demo-pages-inner {
+        padding: 17px 15px; } }
+  .book-profile__demo-pages-page {
+    max-height: 90px;
+    width: 77px; }
+    .book-profile__demo-pages-page:not:last-child {
+      margin-right: 4px; }
+    @media (min-width: 1200px) {
+      .book-profile__demo-pages-page {
+        max-height: 139px;
+        width: 122px;
+        margin-right: 0; }
+        .book-profile__demo-pages-page:not:last-child {
+          margin-bottom: 12px; } }
+  .book-profile__cover-page {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 1;
+        grid-row-start: 1; }
+    @media (min-width: 1200px) {
+      .book-profile__cover-page {
+        -ms-grid-column-align: start;
+            justify-self: start;
+        -ms-grid-column: 2;
+            grid-column-start: 2; } }
   .book-profile__cover-page-img {
-    width: 320px;
-    height: auto;
-    -ms-grid-column-align: center;
-        justify-self: center; }
+    width: 260px;
+    max-height: 367px; }
+    @media (min-width: 1200px) {
+      .book-profile__cover-page-img {
+        width: 320px;
+        max-height: 454px; } }
+  .book-profile__info {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2 / 4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1 / 3; }
+    @media (min-width: 1200px) {
+      .book-profile__info {
+        -ms-grid-column: 3;
+            grid-column-start: 3;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 1;
+        grid-row: 1 / 2; } }
   .book-profile__title {
+    margin-top: 0;
     font-size: 36px;
     font-weight: 700; }
   .book-profile__author {
     font-weight: 700; }
   .book-profile__slogan {
+    margin-bottom: 40px;
     font-size: 16px;
     font-weight: 600;
     opacity: 0.7; }
@@ -997,10 +1098,102 @@ a {
     color: #a6a6a6; }
   .book-profile__tech-info-item {
     margin-bottom: 20px; }
+    .book-profile__tech-info-item--price {
+      font-size: 16px; }
   .book-profile__tech-info-values {
     font-weight: 600;
     opacity: 0.7; }
   .book-profile__tech-info-price-value {
     font-size: 16px; }
+  .book-profile__description {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    padding-right: 110px; }
+    @media (min-width: 1200px) {
+      .book-profile__description {
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 2;
+        grid-column: 2 / 4;
+        -ms-grid-row: 2;
+            grid-row-start: 2;
+        padding-right: 288px; } }
+  .book-profile__description-title {
+    margin-top: 0;
+    font-size: 24px; }
+  .book-profile__description-text {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    opacity: 0.7; }
+  .book-profile__description-full {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1ff7; }
+  .book-profile__social-links-shared {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2 / 4;
+    -ms-grid-row: 3;
+        grid-row-start: 3; }
+  .book-profile__social-links-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none; }
+  .book-profile__social-link {
+    margin-right: 30px; }
+  .book-profile__shared-count {
+    vertical-align: super;
+    font-size: 16px;
+    font-weight: 700;
+    color: #3c3c3c; }
+
+.add-to-basket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 50px; }
+  .add-to-basket__btn {
+    width: 260px;
+    margin-right: 20px;
+    padding: 18px 0;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    outline: none; }
+  .add-to-basket__goods-in-basket {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #3c3c3c;
+    background-color: #dddddd; }
+  .add-to-basket__goods-in-basket__unit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #3c3c3c; }
 
 /*# sourceMappingURL=style.css.map */
