@@ -1,3 +1,4 @@
+@import url(../../node_modules/slick-carousel/slick/slick.css);
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
@@ -321,8 +322,16 @@ a {
   margin: 0 0 0 50px;
   list-style: none;
   padding-left: 3%; }
+  @media (max-width: 320px) {
+    .tabs-list {
+      max-width: 320px;
+      margin: 0;
+      padding-left: 25px; } }
   .tabs-list__item:not(:last-child) {
     margin-right: 51px; }
+  @media (max-width: 320px) {
+    .tabs-list__item:not(:last-child) {
+      margin-right: 15px; } }
   .tabs-list__link {
     position: relative;
     font-size: 16px;
@@ -344,6 +353,9 @@ a {
       background-color: #ef529f;
       -webkit-transition: 0.5s ease;
       transition: 0.5s ease; }
+    @media (max-width: 320px) {
+      .tabs-list__link {
+        font-size: 14px; } }
 
 .catalog-list {
   max-width: 1280px;

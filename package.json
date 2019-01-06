@@ -6,6 +6,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp"
   },
+
+  "lint-staged": {
+    "*.scss": "stylelint —syntax=scss"
+  },
   "author": "Larisa Musalaeva",
   "license": "MIT",
   "repository": {

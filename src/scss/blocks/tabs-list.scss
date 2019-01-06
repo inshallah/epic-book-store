@@ -4,10 +4,24 @@
   list-style: none;
   padding-left: 3%;
 
+
+  @media (max-width: $screen-xs) {
+    max-width: $screen-xs;
+    margin: 0;
+    padding-left: 25px;
+  }
+
   &__item {
 
     &:not(:last-child) {
       margin-right: 51px;
+    }
+
+
+    @media (max-width: $screen-xs) {
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
     }
   }
 
@@ -33,7 +47,11 @@
       background-color: $rose-bright;
       transition: $transition-base;
     }
-  }
+
+    @media (max-width: $screen-xs) {
+     font-size: $font-size;
+   }
+ }
 }
 
 .j-tabs {
