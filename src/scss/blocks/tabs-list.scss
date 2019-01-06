@@ -1,26 +1,29 @@
 .tabs-list {
   display: flex;
-  margin: 0 0 0 50px;
+  margin: 0;
   list-style: none;
-  padding-left: 3%;
+  overflow-x: auto;
+  // padding-left: 3%;
 
 
-  @media (max-width: $screen-xs) {
+  @media (max-width: $screen-xs-s) and (min-width: $screen-xs) {
     max-width: $screen-xs;
-    margin: 0;
-    padding-left: 25px;
+    // margin: 0;
+    // padding-left: 25px;
   }
 
   &__item {
+    padding-left: 10px;
+    padding-right: 10px;
 
     &:not(:last-child) {
-      margin-right: 51px;
+      // margin-right: 51px;
     }
 
 
-    @media (max-width: $screen-xs) {
+    @media (max-width: $screen-xs-s) and (min-width: $screen-xs) {
       &:not(:last-child) {
-        margin-right: 15px;
+        // margin-right: 15px;
       }
     }
   }

@@ -10,18 +10,18 @@
 
 .slider-btn-previous {
 
-  &:before {
-    content: "";
-    position: absolute;
-    width: 42px;
-    height: 42px;
-    background-image: url(../img/slider_previous.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: $rose-base;
-    border-radius: 50%;
-    transition: $transition-base;
-  }
+  // &:before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 42px;
+  //   height: 42px;
+  //   background-image: url(../img/slider_previous.png);
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-color: $rose-base;
+  //   border-radius: 50%;
+  //   transition: $transition-base;
+  // }
 
   &:hover:before {
     content: "";
@@ -42,18 +42,18 @@
 .slider-btn-next {
   left: 95%;
 
-  &:before {
-    content: "";
-    position: absolute;
-    width: 42px;
-    height: 42px;
-    background-image: url(../img/slider_next.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: $rose-base;
-    border-radius: 50%;
-    transition: $transition-base;
-  }
+  // &:before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 42px;
+  //   height: 42px;
+  //   background-image: url(../img/slider_next.png);
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-color: $rose-base;
+  //   border-radius: 50%;
+  //   transition: $transition-base;
+  // }
 
   &:hover:before {
     content: "";
