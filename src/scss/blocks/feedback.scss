@@ -1,12 +1,18 @@
 .feedback {
   width: 100%;
   margin-top: 55px;
+  margin-bottom: 50px;
 
   &__outter {
-    max-width:  1280px;
+    max-width: 1280px;
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0 30px;
+
+    @media (max-width: $screen-xs) {
+      max-width: $screen-xs;
+      padding: 0 10px;
+    }
   }
 
   &__inner {
@@ -20,7 +26,7 @@
       left: 5%;
       top: -8px;
       width: 31%;
-      border-bottom: 8px solid $gray-light-ultimate;
+      border-bottom: 8px solid $gray-lightest;
     }
 
     &:after {
@@ -29,9 +35,8 @@
       left: 36%;
       bottom: -8px;
       width: 57%;
-      border-top: 8px solid $gray-light-ultimate;
+      border-top: 8px solid $gray-lightest;
     }
-
   }
 
   &__title {
@@ -44,5 +49,4 @@
     font-weight: $font-weight-md;
     opacity: 0.7;
   }
-
 }

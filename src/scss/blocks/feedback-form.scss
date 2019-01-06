@@ -3,84 +3,117 @@
   display: flex;
   flex-wrap: wrap;
 
+  @media (max-width: $screen-xs) {
+    flex-direction: column;
+  }
+
+
   &__mail {
-    width: 360px;
+    width: 30%;
     border: none;
     outline: none;
     margin-right: 35px;
     border-bottom: 5px solid $gray-light;
+    background-color: inherit;
+
+    @media (min-width: $screen-xs) and (max-width: $screen-sm) {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+
 
     &::placeholder {
       position: relative;
-      bottom: -10px;
-      color: $gray-base-light;
-      font-size: $font-size-md;
-    }
+// bottom: -10px;
+color: $gray-base-light;
+font-size: $font-size-md;
+}
+}
+
+&__message {
+  width: 30%;
+  border: none;
+  outline: none;
+  margin-right: 35px;
+  border-bottom: 5px solid $gray-light;
+  background-color: inherit;
+
+  @media (min-width: $screen-xs) and (max-width: $screen-sm){
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 
-  &__message {
-    width: 360px;
-    border: none;
-    outline: none;
-    margin-right: 35px;
-    border-bottom: 5px solid $gray-light;
-
-    &::placeholder {
-      position: relative;
-      // bottom: -10px;
-      color: $gray-base-light;
-      font-size: $font-size-md;
-    }
-  }
-
-  &__submit {
-    width: 360px;
-    padding:15px 0;
-    border: none;
-    outline: none;
-    font-size: $font-size-md;
-    font-weight: $font-weight-bd;
-    color: $gray-light-ultimate;
-    background-color: $gray-ultimate;
-
-  }
-
-  &__checkbox {
-    margin-top: 20px;
-  }
-
-  &__real-checkbox {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    z-index: 2;
-    opacity: 0;
-
-  }
-
-  &__custom-checkbox {
+  &::placeholder {
     position: relative;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    z-index: -1;
-    margin-right: 4px;
-    border: 4px solid $gray-light;
+// bottom: -10px;
+color: $gray-base-light;
+font-size: $font-size-md;
+}
+}
 
+&__submit {
+  width: 30%;
+  margin-top: 30px;
+  padding:15px 0;
+  border: none;
+  outline: none;
+  font-size: $font-size-md;
+  font-weight: $font-weight-bd;
+  color: $gray-light-ultimate;
+  background-color: $gray-ultimate;
 
-    &:hover {
-      border-color: $rose-dark;
-    }
+  @media (min-width: $screen-xs) and (max-width: $screen-sm) {
+    order: 1;
+    width: 360px;
+    font-size: ($font-size-md)-2;
   }
 
-  &__checkbox-label {
-    font-weight: $font-weight-md;
-    opacity: 0.7;
+  @media (max-width: $screen-xs) {
+    width: 100%;
   }
 
-  &__privacy-policy {
-  }
+}
 
-  &__data-processing-rules {
+&__checkbox {
+  margin-top: 20px;
+}
+
+&__real-checkbox {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+  opacity: 0;
+
+}
+
+&__custom-checkbox {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  z-index: 3;
+  margin-right: 4px;
+  border: 4px solid $gray-light;
+  transition: $transition-base;
+
+
+  &:hover {
+    border-color: $rose-dark;
+    transition: $transition-base;
   }
+}
+
+&__checkbox-label {
+  font-weight: $font-weight-md;
+  opacity: 0.7;
+}
+
+&__privacy-policy {
+}
+
+&__data-processing-rules {
+}
 }

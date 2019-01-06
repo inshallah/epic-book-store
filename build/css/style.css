@@ -41,6 +41,14 @@ body {
 a {
   text-decoration: none; }
 
+.contacts-main {
+  background-color: #f5f5f5; }
+
+.main-background {
+  position: relative;
+  z-index: -10;
+  background-color: #f5f5f5; }
+
 .page {
   font-family: Montserrat, sans-serif;
   -webkit-box-sizing: border-box;
@@ -697,27 +705,71 @@ a {
 
 .contacts {
   width: 100%;
-  margin-top: 65px; }
+  padding-top: 60px;
+  background-color: #f5f5f5; }
   .contacts__inner {
     max-width: 1280px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin: 0 auto;
     padding: 0 60px; }
+    @media (max-width: 767px) {
+      .contacts__inner {
+        max-width: 767px;
+        padding: 0 30px; } }
+    @media (max-width: 320px) {
+      .contacts__inner {
+        max-width: 320px;
+        padding: 0 15px; } }
   .contacts__title {
+    margin: 0;
     font-size: 50px; }
   .contacts__info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 100%;
+    margin: 0;
+    padding-left: 20px;
     font-size: 16px;
     font-weight: 600;
-    list-style-type: blue; }
+    opacity: 0.7; }
+    @media (max-width: 320px) {
+      .contacts__info {
+        font-size: 14px; } }
   .contacts__address {
-    margin-right: 95px; }
+    margin-right: 95px;
+    padding-top: 20px; }
+    @media (max-width: 490px) and (min-width: 320px) {
+      .contacts__address {
+        margin: 0; } }
   .contacts__hours {
-    margin-right: 55px; }
+    margin-right: 55px;
+    padding-top: 20px; }
+    @media (max-width: 490px) and (min-width: 320px) {
+      .contacts__hours {
+        margin: 0; } }
+  .contacts__phone {
+    padding-top: 20px; }
+    @media (max-width: 992px) {
+      .contacts__phone {
+        width: 100%; } }
+  .contacts__phone-link {
+    color: inherit; }
+
+.map {
+  width: 100%;
+  margin-top: 45px;
+  background-color: #f5f5f5; }
+  @media (min-width: 1200px) {
+    .map__inner {
+      max-width: 1280px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      margin: 0 auto;
+      padding: 0 60px; } }
 
 .map {
   width: 100%;
@@ -732,13 +784,18 @@ a {
 
 .feedback {
   width: 100%;
-  margin-top: 55px; }
+  margin-top: 55px;
+  margin-bottom: 50px; }
   .feedback__outter {
     max-width: 1280px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin: 0 auto;
     padding: 0 30px; }
+    @media (max-width: 320px) {
+      .feedback__outter {
+        max-width: 320px;
+        padding: 0 10px; } }
   .feedback__inner {
     position: relative;
     padding: 50px 20px;
@@ -749,14 +806,14 @@ a {
       left: 5%;
       top: -8px;
       width: 31%;
-      border-bottom: 8px solid #ffffff; }
+      border-bottom: 8px solid #f5f5f5; }
     .feedback__inner:after {
       content: "";
       position: absolute;
       left: 36%;
       bottom: -8px;
       width: 57%;
-      border-top: 8px solid #ffffff; }
+      border-top: 8px solid #f5f5f5; }
   .feedback__title {
     margin: 0;
     font-size: 30px; }
@@ -771,38 +828,52 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  @media (max-width: 320px) {
+    .feedback-form {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
   .feedback-form__mail {
-    width: 360px;
+    width: 30%;
     border: none;
     outline: none;
     margin-right: 35px;
-    border-bottom: 5px solid #e8e8e8; }
+    border-bottom: 5px solid #e8e8e8;
+    background-color: inherit; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .feedback-form__mail {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px; } }
     .feedback-form__mail::-webkit-input-placeholder {
       position: relative;
-      bottom: -10px;
       color: #a6a6a6;
       font-size: 16px; }
     .feedback-form__mail:-ms-input-placeholder {
       position: relative;
-      bottom: -10px;
       color: #a6a6a6;
       font-size: 16px; }
     .feedback-form__mail::-ms-input-placeholder {
       position: relative;
-      bottom: -10px;
       color: #a6a6a6;
       font-size: 16px; }
     .feedback-form__mail::placeholder {
       position: relative;
-      bottom: -10px;
       color: #a6a6a6;
       font-size: 16px; }
   .feedback-form__message {
-    width: 360px;
+    width: 30%;
     border: none;
     outline: none;
     margin-right: 35px;
-    border-bottom: 5px solid #e8e8e8; }
+    border-bottom: 5px solid #e8e8e8;
+    background-color: inherit; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .feedback-form__message {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px; } }
     .feedback-form__message::-webkit-input-placeholder {
       position: relative;
       color: #a6a6a6;
@@ -820,7 +891,8 @@ a {
       color: #a6a6a6;
       font-size: 16px; }
   .feedback-form__submit {
-    width: 360px;
+    width: 30%;
+    margin-top: 30px;
     padding: 15px 0;
     border: none;
     outline: none;
@@ -828,6 +900,16 @@ a {
     font-weight: 700;
     color: #ffffff;
     background-color: #000000; }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .feedback-form__submit {
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+        width: 360px;
+        font-size: 14px; } }
+    @media (max-width: 320px) {
+      .feedback-form__submit {
+        width: 100%; } }
   .feedback-form__checkbox {
     margin-top: 20px; }
   .feedback-form__real-checkbox {
@@ -841,11 +923,15 @@ a {
     display: inline-block;
     width: 20px;
     height: 20px;
-    z-index: -1;
+    z-index: 3;
     margin-right: 4px;
-    border: 4px solid #e8e8e8; }
+    border: 4px solid #e8e8e8;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease; }
     .feedback-form__custom-checkbox:hover {
-      border-color: #d7569c; }
+      border-color: #d7569c;
+      -webkit-transition: 0.5s ease;
+      transition: 0.5s ease; }
   .feedback-form__checkbox-label {
     font-weight: 600;
     opacity: 0.7; }

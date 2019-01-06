@@ -1,20 +1,29 @@
- *,
- *::before,
- *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
 body {
- margin: 0;
- padding: 0;
- font-family: $font-family;
- font-size:  $font-size;
- font-weight: $font-weight;
- background-color: $gray-light-ultimate;
- color: $gray-ultimate;
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  background-color: $gray-light-ultimate;
+  color: $gray-ultimate;
 }
 
 a {
   text-decoration: none;
 }
 
+.contacts-main {
+  background-color: $gray-lightest;
+}
+
+.main-background {
+  position: relative;
+  z-index: -10;
+  background-color: $gray-lightest;
+}
