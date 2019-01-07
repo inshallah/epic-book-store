@@ -43,208 +43,240 @@
 
         <div class="page-header__icons">
           <a href="#">
-            <img class="page-header__basket-img" src="img/icon-basket.png" alt="basket-icon">
+            <!-- <img class="page-header__basket-img" src="img/icon-basket.png" alt="basket-icon"> -->
+            <svg width="20" height="21">
+              <use xlink:href="img/sprite.svg#icon_basket"></use>
+            </svg>
           </a>
           <a href="#">
-            <img class="page-header__phone-img" src="img/icon-phone.png" alt="phone-icon">
-          </a>
-        </div>
+           <!--      <img class="page-header__phone-img" src="img/icon-phone.png" alt="phone-icon"> -->
+           <svg width="16" height="16">
+            <use xlink:href="img/sprite.svg#icon_phone"></use>
+          </svg>
+        </a>
       </div>
     </div>
-  </header>
+  </div>
+</header>
 
 
-  <main>
+<main>
 
-    <div class="promo">
-      <div class="promo__inner">
-        <div class="slider">
-          <button class="slider-btn slider-btn-previous"></button>
-          <button class="slider-btn slider-btn-next"></button>
-          <article class="slider__item">
-            <div class="slider__item-descr">
-              <h2 class="slider__item-news">Новое поступление книги «Симпсоны<br> и их математические секреты»</h2>
-              <div class="slider__item-descr-wrap">
-                <p class="slider__item-announce">Для поклонников<br> сериала «Симпсоны»<br> и для всех, кому<br> интересна математика.</p>
-                <a class="slider__item-more-about" href="">Хочу узнать о книге больше</a>
-              </div>
+  <div class="promo">
+    <div class="promo__inner">
+      <div class="slider">
+        <button class="slider-btn slider-btn-previous"></button>
+        <button class="slider-btn slider-btn-next"></button>
+        <article class="slider__item">
+          <div class="slider__item-descr">
+            <span class="slider__item-news">Новое поступление книги «Симпсоны и их математические секреты»</span>
+            <div class="slider__item-descr-wrap">
+              <p class="slider__item-announce">Для поклонников сериала «Симпсоны» и для всех, кому интересна математика</p>
+              <a class="slider__item-more-about" href="">Хочу узнать о книге больше</a>
             </div>
-            <div class="slider__item-img-wrap">
-              <img class="slider__item-img" src="img/book-simpsony-i-ih-matematicheskie-sekrety.jpg" alt="Simpsons book">
-            </div>
-          </article>
-        </div>
-      </div>
-    </div>
-
-
-    <section class="catalog">
-      <h1 class="catalog__title">Каталог</h1>
-
-      <div class="tabs">
-        <div class="tabs__inner">
-
-          <ul class="tabs-list j-tabs">
-            <li class="tabs-list__item">
-              <a href="#" class="tabs-list__link" data-type="all">Все</a>
-            </li>
-            <li class="tabs-list__item">
-              <a href="#" class="tabs-list__link" data-type="marketing">Маркетинг</a>
-            </li>
-            <li class="tabs-list__item">
-              <a href="#" class="tabs-list__link" data-type="sience">Научпоп</a>
-            </li>
-            <li class="tabs-list__item">
-              <a href="#" class="tabs-list__link" data-type="business">Бизнес</a>
-            </li>
-            <li class="tabs-list__item">
-              <a href="#" class="tabs-list__link" data-type="creativity">Творчество</a>
-            </li>
-          </ul>
-
-        </div>
-      </div>
-
-      <div class="catalog-list">
-        <div class="catalog-list__inner  j-product-cards">
-
-          <a class="product-card-mini" href="#">
-            <h2 class="product-card-mini__title">Латеральная логика</h2>
-            <div class="product-card-mini__img-wrap">
-              <img class="product-card-mini__img" src="img/book-lateralnaya-logika.jpg" alt="book-lateralnaya-logika">
-            </div>
-            <p class="product-card-mini__descr">Головоломный путь к нестандартному мышлению</p>
-            <span class="product-card-mini__price">500 ₽</span>
-          </a>
-
-          <a class="product-card-mini" href="#">
-            <h2 class="product-card-mini__title">Путеводитель по лжи</h2>
-            <div class="product-card-mini__img-wrap">
-              <img class="product-card-mini__img" src="img/book-putevoditel-po-lzhi.jpg" alt="book-putevoditel-po-lzhi">
-            </div>
-            <p class="product-card-mini__descr">Критическое мышление в эпоху постправды</p>
-            <span class="product-card-mini__price">630 ₽</span>
-          </a>
-
-          <a class="product-card-mini" href="#">
-            <h2 class="product-card-mini__title">Дао физики</h2>
-            <div class="product-card-mini__img-wrap">
-              <img class="product-card-mini__img" src="img/book-dao-fiziki.jpg" alt="book-dao-fiziki">
-            </div>
-            <p class="product-card-mini__descr">Исследование параллелей между современной физикой и восточной философией</p>
-            <span class="product-card-mini__price">560 ₽</span>
-          </a>
-
-          <a class="product-card-mini" href="#">
-            <h2 class="product-card-mini__title">Не очевидно</h2>
-            <div class="product-card-mini__img-wrap">
-              <img class="product-card-mini__img" src="img/book-ne-ochevidno.jpg" alt="book-ne-ochevidno">
-            </div>
-            <p class="product-card-mini__descr">Как выявлять тренды раньше других</p>
-            <span class="product-card-mini__price">365 ₽</span>
-          </a>
-
-          <a class="product-card-mini" href="#">
-           <h2 class="product-card-mini__title">Суперпотребители</h2>
-           <div class="product-card-mini__img-wrap">
-             <img class="product-card-mini__img" src="img/book-superpotrebiteli.jpg" alt="book-superpotrebiteli">
-           </div>
-           <p class="product-card-mini__descr">Кто это и почему они так важны для вашего бизнеса</p>
-           <span class="product-card-mini__price">500 ₽</span>
-         </a>
-
-         <a class="product-card-mini" href="#">
-          <h2 class="product-card-mini__title">Маркетинг в социальных сетях</h2>
-          <div class="product-card-mini__img-wrap">
-            <img class="product-card-mini__img" src="img/book-social-media-marketing.jpg" alt="book-social-media-marketing">
           </div>
-          <p class="product-card-mini__descr"></p>
+          <div class="slider__item-img-wrap">
+            <img class="slider__item-img" src="img/book-simpsony-i-ih-matematicheskie-sekrety.jpg" alt="Simpsons book">
+          </div>
+        </article>
+
+        <article class="slider__item">
+          <div class="slider__item-descr">
+            <span class="slider__item-news">Новое поступление книги «45 татуировок менеджера»</span>
+            <div class="slider__item-descr-wrap">
+              <p class="slider__item-announce">Книга про правила российского руководителя</p>
+              <a class="slider__item-more-about" href="">Хочу узнать о книге больше</a>
+            </div>
+          </div>
+          <div class="slider__item-img-wrap">
+            <img class="slider__item-img" src="img/45-tatuirovok-prodavana.jpg" alt="45-tatuirovok-prodavana">
+          </div>
+        </article>
+
+        <article class="slider__item">
+          <div class="slider__item-descr">
+            <span class="slider__item-news">Узнайте, как обучить персонал с новой книгой «Пятая дисциплина»</span>
+            <div class="slider__item-descr-wrap">
+              <p class="slider__item-announce">Искусство и практика обучающейся организации</p>
+              <a class="slider__item-more-about" href="">Хочу узнать о книге больше</a>
+            </div>
+          </div>
+          <div class="slider__item-img-wrap">
+            <img class="slider__item-img" src="img/pyataya-distsiplina.jpg" alt="pyataya-distsiplina">
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="catalog">
+    <h1 class="catalog__title">Каталог</h1>
+
+    <div class="tabs">
+      <div class="tabs__inner">
+
+        <ul class="tabs-list j-tabs">
+          <li class="tabs-list__item">
+            <a href="#" class="tabs-list__link" data-type="all">Все</a>
+          </li>
+          <li class="tabs-list__item">
+            <a href="#" class="tabs-list__link" data-type="marketing">Маркетинг</a>
+          </li>
+          <li class="tabs-list__item">
+            <a href="#" class="tabs-list__link" data-type="sience">Научпоп</a>
+          </li>
+          <li class="tabs-list__item">
+            <a href="#" class="tabs-list__link" data-type="business">Бизнес</a>
+          </li>
+          <li class="tabs-list__item">
+            <a href="#" class="tabs-list__link" data-type="creativity">Творчество</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="catalog__list">
+      <div class="catalog__list-inner  j-product-cards">
+
+        <a class="product-card-mini" href="#">
+          <h2 class="product-card-mini__title">Латеральная логика</h2>
+          <div class="product-card-mini__img-wrap">
+            <img class="product-card-mini__img" src="img/book-lateralnaya-logika.jpg" alt="book-lateralnaya-logika">
+          </div>
+          <p class="product-card-mini__descr">Головоломный путь к нестандартному мышлению</p>
+          <span class="product-card-mini__price">500 ₽</span>
+        </a>
+
+        <a class="product-card-mini" href="#">
+          <h2 class="product-card-mini__title">Путеводитель по лжи</h2>
+          <div class="product-card-mini__img-wrap">
+            <img class="product-card-mini__img" src="img/book-putevoditel-po-lzhi.jpg" alt="book-putevoditel-po-lzhi">
+          </div>
+          <p class="product-card-mini__descr">Критическое мышление в эпоху постправды</p>
           <span class="product-card-mini__price">630 ₽</span>
         </a>
 
         <a class="product-card-mini" href="#">
-          <h2 class="product-card-mini__title">Правильный выбор</h2>
+          <h2 class="product-card-mini__title">Дао физики</h2>
           <div class="product-card-mini__img-wrap">
-            <img class="product-card-mini__img" src="img/book-pravilnyij-vyibor.jpg" alt="book-pravilnyij-vyibor">
+            <img class="product-card-mini__img" src="img/book-dao-fiziki.jpg" alt="book-dao-fiziki">
           </div>
-          <p class="product-card-mini__descr">Практическое руководство по принятию взвешенных решений</p>
+          <p class="product-card-mini__descr">Исследование параллелей между современной физикой и восточной философией</p>
           <span class="product-card-mini__price">560 ₽</span>
         </a>
 
         <a class="product-card-mini" href="#">
-          <h2 class="product-card-mini__title">Главное в истории искусств</h2>
+          <h2 class="product-card-mini__title">Не очевидно</h2>
           <div class="product-card-mini__img-wrap">
-            <img class="product-card-mini__img" src="img/book-glavnoe-v-istorii-iskusstv.jpg" alt="book-glavnoe-v-istorii-iskusstv">
+            <img class="product-card-mini__img" src="img/book-ne-ochevidno.jpg" alt="book-ne-ochevidno">
           </div>
-          <p class="product-card-mini__descr">Ключевые работы, темы, направления, техники</p>
+          <p class="product-card-mini__descr">Как выявлять тренды раньше других</p>
           <span class="product-card-mini__price">365 ₽</span>
         </a>
 
-      </div>
-    </div>
+        <a class="product-card-mini" href="#">
+         <h2 class="product-card-mini__title">Суперпотребители</h2>
+         <div class="product-card-mini__img-wrap">
+           <img class="product-card-mini__img" src="img/book-superpotrebiteli.jpg" alt="book-superpotrebiteli">
+         </div>
+         <p class="product-card-mini__descr">Кто это и почему они так важны для вашего бизнеса</p>
+         <span class="product-card-mini__price">500 ₽</span>
+       </a>
 
-    <div class="pagination">
-      <div class="pagination__inner">
-        <ul class="pagination-list">
-          <li class="pagination-list__item"><a href="#" class="pagination-list__link">1</a></li>
-          <li class="pagination-list__item"><a href="#" class="pagination-list__link">2</a></li>
-          <li class="pagination-list__item"><a href="#" class="pagination-list__link">3</a></li>
-          <li class="pagination-list__item"><a href="#" class="pagination-list__link">4</a></li>
-          <li class="pagination-list__item"><a href="#" class="pagination-list__link">5</a></li>
-          <li class="pagination-list__item"><a href="#" class="pagination-list__link">...</a></li>
-          <li class="pagination-list__item"><a href="#" class="pagination-list__link">10</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="advantages">
-    <div class="advantages__outter">
-      <div class="advantages__inner-wrap">
-        <h2 class="advantages__title">Доставим в любое место</h2>
-        <span class="advantages__extra-title">// ну почти в любое</span>
-
-        <div class="advantages__items">
-          <div class="advantages__item">
-            <div class="advantages__item-img-wrap">
-              <svg width="48" height="48">
-                <use xlink:href="img/sprite.svg#icon_book"></use>
-              </svg>
-            </div>
-            <p class="advantages__item-text">Покупаете книги на сайте в любимом формате — бумажные, электронные или аудио.</p>
-          </div>
-
-          <div class="advantages__item">
-            <div class="advantages__item-img-wrap">
-              <svg width="48" height="48">
-                <use xlink:href="img/sprite.svg#icon_box"></use>
-              </svg>
-            </div>
-            <p class="advantages__item-text">Мы подарим вам «Набор читателя» и добавим в посылку.</p>
-          </div>
-
-          <div class="advantages__item">
-            <div class="advantages__item-img-wrap">
-              <svg width="48" height="48">
-                <use xlink:href="img/sprite.svg#icon_delivery"></use>
-              </svg>
-            </div>
-            <p class="advantages__item-text">Бесплатно доставляем заказы от 3 000 по всей России.</p>
-          </div>
-
-          <div class="advantages__item">
-            <div class="advantages__item-img-wrap advantages__item-img-wrap--bottom">
-             <svg width="48" height="48">
-              <use xlink:href="img/sprite.svg#icon_map"></use>
-            </svg>
-          </div>
-          <p class="advantages__item-text">Доставка в более чем 300 городов России, по Москве и Санкт-Петербургу — бесплатно.</p>
+       <a class="product-card-mini" href="#">
+        <h2 class="product-card-mini__title">Маркетинг в социальных сетях</h2>
+        <div class="product-card-mini__img-wrap">
+          <img class="product-card-mini__img" src="img/book-social-media-marketing.jpg" alt="book-social-media-marketing">
         </div>
+        <p class="product-card-mini__descr"></p>
+        <span class="product-card-mini__price">630 ₽</span>
+      </a>
 
-      </div>
+      <a class="product-card-mini" href="#">
+        <h2 class="product-card-mini__title">Правильный выбор</h2>
+        <div class="product-card-mini__img-wrap">
+          <img class="product-card-mini__img" src="img/book-pravilnyij-vyibor.jpg" alt="book-pravilnyij-vyibor">
+        </div>
+        <p class="product-card-mini__descr">Практическое руководство по принятию взвешенных решений</p>
+        <span class="product-card-mini__price">560 ₽</span>
+      </a>
+
+      <a class="product-card-mini" href="#">
+        <h2 class="product-card-mini__title">Главное в истории искусств</h2>
+        <div class="product-card-mini__img-wrap">
+          <img class="product-card-mini__img" src="img/book-glavnoe-v-istorii-iskusstv.jpg" alt="book-glavnoe-v-istorii-iskusstv">
+        </div>
+        <p class="product-card-mini__descr">Ключевые работы, темы, направления, техники</p>
+        <span class="product-card-mini__price">365 ₽</span>
+      </a>
+
     </div>
   </div>
+
+  <div class="pagination">
+    <div class="pagination__inner">
+      <ul class="pagination-list">
+        <li class="pagination-list__item"><a href="#" class="pagination-list__link">1</a></li>
+        <li class="pagination-list__item"><a href="#" class="pagination-list__link">2</a></li>
+        <li class="pagination-list__item"><a href="#" class="pagination-list__link">3</a></li>
+        <li class="pagination-list__item"><a href="#" class="pagination-list__link">4</a></li>
+        <li class="pagination-list__item"><a href="#" class="pagination-list__link">5</a></li>
+        <li class="pagination-list__item"><a href="#" class="pagination-list__link">...</a></li>
+        <li class="pagination-list__item"><a href="#" class="pagination-list__link">10</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<section class="advantages">
+  <div class="advantages__outter">
+    <div class="advantages__inner-wrap">
+      <h2 class="advantages__title">Доставим в любое место</h2>
+      <span class="advantages__extra-title">// ну почти в любое</span>
+
+      <div class="advantages__items">
+        <div class="advantages__item">
+          <div class="advantages__item-img-wrap">
+            <svg width="48" height="48">
+              <use xlink:href="img/sprite.svg#icon_book"></use>
+            </svg>
+          </div>
+          <p class="advantages__item-text">Покупаете книги на сайте в любимом формате — бумажные, электронные или аудио.</p>
+        </div>
+
+        <div class="advantages__item">
+          <div class="advantages__item-img-wrap">
+            <svg width="48" height="48">
+              <use xlink:href="img/sprite.svg#icon_box"></use>
+            </svg>
+          </div>
+          <p class="advantages__item-text">Мы подарим вам «Набор читателя» и добавим в посылку.</p>
+        </div>
+
+        <div class="advantages__item">
+          <div class="advantages__item-img-wrap">
+            <svg width="48" height="48">
+              <use xlink:href="img/sprite.svg#icon_delivery"></use>
+            </svg>
+          </div>
+          <p class="advantages__item-text">Бесплатно доставляем заказы от 3 000 по всей России.</p>
+        </div>
+
+        <div class="advantages__item">
+          <div class="advantages__item-img-wrap advantages__item-img-wrap--bottom">
+           <svg width="48" height="48">
+            <use xlink:href="img/sprite.svg#icon_map"></use>
+          </svg>
+        </div>
+        <p class="advantages__item-text">Доставка в более чем 300 городов России, по Москве и Санкт-Петербургу — бесплатно.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
 </section>
 
 
@@ -339,8 +371,8 @@
 
   </div>
 </footer>
-
-<script type="module" src="./js/script.js"></script>
+<!--
+  <script type="module" src="./js/script.js"></script> -->
 </body>
 
 </html>

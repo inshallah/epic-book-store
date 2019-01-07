@@ -1,9 +1,9 @@
 
-import insertElements from '../../node_modules/jquery/dist/jquery.js';
+// import from '../../node_modules/jquery/dist/jquery.js';
 import insertElements from './modules/insertElements.js';
 import bookCardTemplate from './modules/bookCardTemplate.js';
 import sendRequest from './modules/sendRequest.js';
-import sendRequest from '../../node_modules/slick-carousel/slick/slick.js';
+// import from '../../node_modules/slick-carousel/slick/slick.js';
 
 const data = {
   page: 1,

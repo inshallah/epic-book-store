@@ -18,8 +18,7 @@
       padding: 0 30px;
     }
 
-    @media (max-width: $screen-xs) {
-      max-width: $screen-xs;
+    @media (min-width: $screen-xs) and (max-width: $screen-xs-s) {
       padding: 0 10px;
     }
   }

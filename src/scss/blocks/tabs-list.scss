@@ -6,8 +6,10 @@
   // padding-left: 3%;
 
 
-  @media (max-width: $screen-xs-s) and (min-width: $screen-xs) {
-    max-width: $screen-xs;
+  @media (max-width: $screen-md) and (min-width: $screen-xs) {
+    // max-width: $screen-xs;
+    padding-left: 0;
+    padding-right: 0;
     // margin: 0;
     // padding-left: 25px;
   }
@@ -51,7 +53,7 @@
       transition: $transition-base;
     }
 
-    @media (max-width: $screen-xs) {
+    @media (max-width: $screen-xs-s) and (min-width: $screen-xs) {
      font-size: $font-size;
    }
  }

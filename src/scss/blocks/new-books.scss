@@ -17,6 +17,7 @@
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0 60px 80px 60px;
+    overflow-x: auto;
 
 
     @media (max-width: $screen-sm) {
@@ -46,7 +47,7 @@
     color: $link-color;
 
 
-    @media (max-width: $screen-xs) {
+    @media (max-width: 490px) and (min-width: 320px) {
       display: block;
       bottom: 15px;
       font-size: $font-size;

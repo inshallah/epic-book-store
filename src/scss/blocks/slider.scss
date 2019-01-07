@@ -7,10 +7,10 @@
   }
 
   &__item-descr {
-    margin-right: 170px;
+    margin-right: 13%;
 
 
-    @media (max-width: $screen-sm) {
+    @media (max-width: $screen-md) {
       width: 100%;
       margin-right: 0;
     }
@@ -31,9 +31,10 @@
       padding-left: 0;
     }
 
-    @media (max-width: $screen-xs) {
+    @media (min-width: $screen-xs) and (max-width: $screen-xs-s) {
       font-size: $font-size;
-      padding-left: 8px;
+      padding-left: 0;
+      padding-right: 10px;
     }
   }
 
@@ -41,33 +42,39 @@
     content: "";
     position: relative;
     max-width: 500px;
-    border: 8px solid $gray-light;
+    margin: 0;
     padding: 0 0 45px 30px;
+    border: 8px solid $gray-light;
 
 
     @media (max-width: $screen-sm) {
-      max-width: 100%;
+
     }
 
-    @media (max-width: $screen-xs) {
-      max-width: 290px;
-      padding: 40px 30px 25px 9px;
+    @media (min-width: $screen-xs) and (max-width: $screen-xs-s) {
+      padding: 40px 0 25px 9px;
     }
   }
 
   &__item-announce {
-    width: max-content;
+    position: relative;
+    z-index: 5;
+    width: 515px;
     font-size: $font-size-lg;
     line-height: $line-height-lg;
     font-weight: $font-weight-bd;
 
 
-    @media (max-width: $screen-sm) {
-      font-size: $font-size-bg-x;
-      line-height: $line-height-md-x;
+
+    @media (min-width: $screen-xs-s) and (max-width: $screen-sm) {
+      width: 370px;
+      font-size: $font-size-md-x;
+      line-height: $line-height-md;
     }
 
-    @media (max-width: $screen-xs) {
+    @media (min-width: $screen-xs) and (max-width: $screen-xs-s) {
+      width: fit-content;
+      margin-top: 0;
       font-size: $font-size-md-x;
       line-height: $line-height-md;
     }
@@ -87,16 +94,16 @@
   &__item-img-wrap {
     width: 302px;
     height: 423px;
-    margin-right: 80px;
+    // margin-right: 80px;
 
 
-    @media (max-width: $screen-sm) {
+    @media (max-width: $screen-md) {
       display: none;
     }
   }
 
   &__item-img {
-    max-width: 100%;
+    width: 300px;
     height: auto;
   }
 }
