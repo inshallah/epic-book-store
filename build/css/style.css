@@ -78,8 +78,6 @@ a {
     color: #828282; }
     @media (max-width: 767px) {
       .page-header__working-hours {
-        display: block;
-        margin-left: 0;
         padding-top: 10px; } }
     @media (min-width: 320px) and (max-width: 490px) {
       .page-header__working-hours {

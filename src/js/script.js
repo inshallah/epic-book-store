@@ -1,9 +1,9 @@
 
-// import from '../../node_modules/jquery/dist/jquery.js';
+import $ from '../../node_modules/jquery/dist/jquery.js';
 import insertElements from './modules/insertElements.js';
 import bookCardTemplate from './modules/bookCardTemplate.js';
 import sendRequest from './modules/sendRequest.js';
-// import from '../../node_modules/slick-carousel/slick/slick.js';
+import slick from '../../node_modules/slick-carousel/slick/slick.js';
 
 const data = {
   page: 1,
@@ -27,7 +27,14 @@ if (wrap) {
   });
 }
 
+//слайдер
 
+$('.j-slider').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1
+});
 
 //Вешаем слушатель на табы
 const tabWrap = document.querySelector('.j-tabs');
