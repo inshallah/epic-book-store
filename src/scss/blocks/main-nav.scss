@@ -1,29 +1,32 @@
 .main-nav {
+  margin-right: 15px;
 
   @media (max-width: $screen-sm) {
-    margin-right: 15px;
-  }
-
-  @media (min-width: $screen-xs) and (max-width: $screen-sm) {
     display: none;
   }
 
-  &__toggle {
-    display: none;
-  }
 
   &__list {
     display: flex;
     list-style: none;
     margin: 0;
     padding-left: 0;
+
+    @media (min-width: $screen-xs) and (max-width: $screen-xs-s) {
+      flex-direction: column;
+      position: absolute;
+      right: 0;
+    }
   }
 
   &__item {
-    margin-right: 20px;
     font-size: $font-size;
     font-weight: $font-weight-bd;
     text-transform: lowercase;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
   }
 
   &__link {
@@ -34,6 +37,3 @@
     }
   }
 }
-
-
-

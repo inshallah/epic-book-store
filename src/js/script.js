@@ -27,14 +27,26 @@ if (wrap) {
   });
 }
 
+
+//Бургер-меню
+
+$('.page-header__toggle').on('click', function() {
+  // $(this).css("display","none");
+
+  $('.main-nav').toggleClass('.active');
+  $('.main-nav').toggle();
+});
+
+
 //слайдер
 
-$('.j-slider').slick({
-  dots: false,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 1
-});
+// $('.j-slider').slick({
+//   dots: false,
+//   infinite: true,
+//   speed: 300,
+//   slidesToShow: 1,
+//   slidesToScroll: 1
+// });
 
 //Вешаем слушатель на табы
 const tabWrap = document.querySelector('.j-tabs');

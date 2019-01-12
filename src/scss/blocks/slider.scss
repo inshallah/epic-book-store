@@ -17,8 +17,6 @@
   }
 
   &__item-news {
-    position: relative;
-    bottom: 15px;
     margin-top: 0;
     padding-left: 30px;
     font-size: $font-size-md;
@@ -39,17 +37,12 @@
   }
 
   &__item-descr-wrap {
-    content: "";
+    content: '';
     position: relative;
     max-width: 500px;
     margin: 0;
     padding: 0 0 45px 30px;
     border: 8px solid $gray-light;
-
-
-    @media (max-width: $screen-sm) {
-
-    }
 
     @media (min-width: $screen-xs) and (max-width: $screen-xs-s) {
       padding: 40px 0 25px 9px;
@@ -94,8 +87,6 @@
   &__item-img-wrap {
     width: 302px;
     height: 423px;
-    // margin-right: 80px;
-
 
     @media (max-width: $screen-md) {
       display: none;
@@ -107,6 +98,3 @@
     height: auto;
   }
 }
-
-
-

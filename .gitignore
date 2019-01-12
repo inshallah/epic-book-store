@@ -1,7 +1,9 @@
 .Saved/
 _arc/
 bower_components/
+/build
 node_modules/
+husky
 .vscode/
 .DS_Store
 *.log
