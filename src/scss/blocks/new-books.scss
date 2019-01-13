@@ -1,7 +1,9 @@
 .new-books {
   position: relative;
+  overflow-x: auto;
   width: 100%;
   margin-top: 90px;
+
 
   &__background {
     background-color: $rose-base;
@@ -11,6 +13,7 @@
     bottom: 0;
     z-index: -3;
   }
+
 
   &__inner {
     max-width: 1280px;
@@ -24,17 +27,21 @@
       padding: 0 30px 80px;
     }
 
+
+
     @media (max-width: $screen-xs) {
       max-width: $screen-xs;
       padding: 0 10px 80px;
     }
   }
 
+
   &__title {
     font-size: $font-size-bg-x;
     font-weight: $font-weight-bd;
     color: $gray-ultimate;
   }
+
 
   &__all {
     display: flex;
@@ -46,20 +53,30 @@
     color: $link-color;
 
 
-    @media (max-width: $screen-xs) {
+
+    @media (min-width: $screen-xs) and (max-width:$screen-xs-s) {
+      position: static;
+      margin-top: 15px;
       display: block;
       bottom: 15px;
       font-size: $font-size;
     }
+
 
     &:hover {
       color: $link-color-hover;
     }
   }
 
+
   &__wrap {
     display: flex;
     justify-content: space-between;
+
+
+    @media (min-width: $screen-xs) and (max-width:$screen-xs-s) {
+      margin-top: 40px;
+    }
   }
 }
 
