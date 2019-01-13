@@ -56,7 +56,7 @@
     max-width: 160px;
     height: fit-content;
     text-align: center;
-
+    cursor: pointer;
 
 
     @media (max-width: $screen-lg) {
@@ -75,7 +75,6 @@
   &__demo-pages-inner {
     padding: 17px 15px;
     border: 4px solid $gray-light;
-
 
 
     @media (max-width: $screen-lg) {
@@ -259,14 +258,17 @@
 
 
 &__description-full {
- font-size: $font-size-md;
- font-weight: $font-weight-md;
- color: $link-color;
+  display: inline-block;
+  margin-top: 40px;
+  font-size: $font-size-md;
+  font-weight: $font-weight-md;
+  color: $link-color;
 }
 
 
 &__social-links-shared {
   grid-area: socials;
+  margin-top: 20px;
 
 
   @media (max-width: $screen-xs-s) and (min-width: $screen-xs) {
@@ -283,8 +285,9 @@
 }
 
 
-&__social-link {
+&__social-item {
   margin-right: 30px;
+  cursor: pointer;
 }
 
 
