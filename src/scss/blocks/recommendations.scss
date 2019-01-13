@@ -1,0 +1,267 @@
+.recommendations {
+  padding-top: 70px;
+  padding-bottom: 100px;
+
+  &__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+
+  &__title {
+    margin-top: 0;
+    font-size: $font-size-lg-x;
+  }
+
+
+  &__container {
+    display: grid;
+    grid-template-columns: 302px 1fr 1fr 265px;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-template-areas:
+    "article poll poll present"
+    "gallery poll poll present"
+    "gallery vote kids present"
+    "exchange exchange exchange present"
+  }
+
+
+  &__article {
+    grid-area: article;
+    padding: 20px;
+    background-color: $gray-light-ultimate;
+    box-shadow: 0px 3px 9.2px 0.8px rgba(64, 66, 172, 0.35);
+    border-radius: 2%;
+  }
+
+
+  &__article-title {
+    margin-top: 0;
+    font-size: $font-size-md;
+    font-weight: $font-weight-md;
+  }
+
+
+  &__article-preview {
+    font-size: $font-size-md;
+    line-height: $line-height-md;
+  }
+
+
+  &__article-more {
+    font-size: $font-size-md;
+    font-weight: $font-weight-md;
+  }
+
+
+  &__gallery {
+    grid-area: gallery;
+    position: relative;
+    background-image: url("../../img/recommend-gallery.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 1%;
+
+
+    &:before {
+     content: "";
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(13, 17, 196, 0.58);
+     border-radius: inherit;
+   }
+ }
+
+
+ &__gallery-title {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  top: 130px;
+  margin: 0;
+  padding: 0 10px;
+  font-size: $font-size-bg;
+  font-weight: $font-weight-md;
+  line-height: $line-height-md;
+  color: $gray-lightest-x;
+}
+
+
+&__book-poll {
+  grid-area: poll;
+  position: relative;
+  background-image: url("../../img/reccom-book-voting.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 1%;
+
+
+  &:before {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(13, 17, 196, 0.58);
+   border-radius: inherit;
+ }
+}
+
+
+&__book-poll-title {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-size: $font-size-bg;
+  font-weight: $font-weight-md;
+  line-height: $line-height-md;
+  color: $gray-lightest-x;
+}
+
+
+&__book-poll-preview {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-size: $font-size-md;
+  color: $gray-lightest-x;
+}
+
+
+&__users-voting {
+  grid-area: vote;
+  padding: 13px 14px 8px 12px;
+  background-color: $gray-light-ultimate;
+  box-shadow: 0px 3px 9.2px 0.8px rgba(64, 66, 172, 0.35);
+  border-radius: 2%;
+}
+
+
+&__users-voting-title {
+  margin-top: 0;
+  font-size: $font-size-md;
+  font-weight: $font-weight-md;
+}
+
+
+&__users-voting-preview {
+  font-size: $font-size-md;
+  line-height: $line-height-md;
+}
+
+
+&__users-voting-btn {
+  width: 100%;
+  padding: 17px 0;
+  border: none;
+  outline: none;
+  font-size: $font-size-md;
+  font-weight: $font-weight-bd;
+  color: $gray-light-ultimate;
+  background-color: $gray-ultimate;
+}
+
+
+&__kid-books {
+  grid-area: kids;
+  padding: 20px 17px 0 16px;
+  background-color: $rose-dark-x;
+  box-shadow: 0px 3px 9.2px 0.8px rgba(64, 66, 172, 0.35);
+  border-radius: 2%;
+}
+
+
+&__kid-books-title {
+  margin-top: 0;
+  font-size: $font-size-md;
+  font-weight: $font-weight-md;
+  color: $gray-lightest;
+}
+
+
+&__kid-books-preview {
+  font-size: $font-size-md;
+  line-height: $line-height-md;
+  color: $gray-lightest;
+}
+
+
+&__books-exchange {
+  grid-area: exchange;
+  position: relative;
+  background-image: url("../../img/recomm-books-exchange.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 1%;
+
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(215, 86, 156, 0.8);
+    border-radius: inherit;
+  }
+}
+
+
+&__books-exchange-title {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  top: 40px;
+  font-size: $font-size-bg;
+  font-weight: $font-weight-md;
+  line-height: $line-height-md;
+  color: $gray-lightest-x;
+}
+
+
+&__books-exchange-preview {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin-top: 50px;
+  font-size: $font-size-md;
+  color: $gray-lightest-x;
+}
+
+
+&__book-present {
+  grid-area: present;
+  padding-left: 15px;
+}
+
+
+&__book-present-title {
+  font-size: $font-size-md;
+  font-weight: $font-weight-md;
+}
+
+
+&__book-present-preview {
+  font-size: $font-size-md;
+  line-height: $line-height-md;
+}
+
+
+&__book-present-img {
+  width: 100%;
+}
+
+
+&__book-present-name {
+  font-size: $font-size-bg;
+  font-weight: $font-weight-bd;
+}
+
+
+&__book-present-descr {
+  font-size: $font-size-md;
+  line-height: $line-height;
+  font-style: italic;
+}
+}

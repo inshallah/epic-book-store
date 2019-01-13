@@ -158,6 +158,9 @@ a {
     margin-right: 15px; }
   .page-header__icons-link--phone {
     margin-left: 10px; }
+    @media (min-width: 320px) and (max-width: 490px) {
+      .page-header__icons-link--phone {
+        display: none; } }
   @media (max-width: 767px) {
     .page-header__basket-img {
       margin-right: 10px; } }
@@ -216,20 +219,19 @@ a {
         padding: 0 10px; } }
 
 .slider {
-  position: relative; }
+  position: relative;
+  padding: 0 calc(8.33%); }
   .slider__item {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-  .slider__item-descr {
-    margin-right: 13%; }
-    @media (max-width: 992px) {
-      .slider__item-descr {
-        width: 100%;
-        margin-right: 0; } }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  @media (max-width: 992px) {
+    .slider__item-descr {
+      width: 100%;
+      margin-right: 0; } }
   .slider__item-news {
     margin-top: 0;
     padding-left: 30px;
@@ -258,7 +260,7 @@ a {
   .slider__item-announce {
     position: relative;
     z-index: 5;
-    width: 515px;
+    margin-right: -20%;
     font-size: 40px;
     line-height: 50px;
     font-weight: 700; }
@@ -412,6 +414,7 @@ a {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
+    max-height: 370px;
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease; }
     .product-card-mini__img-wrap:hover {
@@ -849,7 +852,13 @@ a {
     outline: none;
     margin-right: 35px;
     border-bottom: 5px solid #e8e8e8;
-    background-color: inherit; }
+    background-color: inherit;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease; }
+    .feedback-form__mail:hover {
+      border-color: #d7569c;
+      -webkit-transition: 0.5s ease;
+      transition: 0.5s ease; }
     @media (min-width: 320px) and (max-width: 767px) {
       .feedback-form__mail {
         width: 100%;
@@ -871,13 +880,27 @@ a {
       position: relative;
       color: #a6a6a6;
       font-size: 16px; }
+    .feedback-form__mail:focus::-webkit-input-placeholder {
+      color: #d7569c; }
+    .feedback-form__mail:focus:-ms-input-placeholder {
+      color: #d7569c; }
+    .feedback-form__mail:focus::-ms-input-placeholder {
+      color: #d7569c; }
+    .feedback-form__mail:focus::placeholder {
+      color: #d7569c; }
   .feedback-form__message {
     width: 30%;
     border: none;
     outline: none;
     margin-right: 35px;
     border-bottom: 5px solid #e8e8e8;
-    background-color: inherit; }
+    background-color: inherit;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease; }
+    .feedback-form__message:hover {
+      border-color: #d7569c;
+      -webkit-transition: 0.5s ease;
+      transition: 0.5s ease; }
     @media (min-width: 320px) and (max-width: 767px) {
       .feedback-form__message {
         width: 100%;
@@ -901,6 +924,14 @@ a {
       position: relative;
       color: #a6a6a6;
       font-size: 16px; }
+    .feedback-form__message:focus::-webkit-input-placeholder {
+      color: #d7569c; }
+    .feedback-form__message:focus:-ms-input-placeholder {
+      color: #d7569c; }
+    .feedback-form__message:focus::-ms-input-placeholder {
+      color: #d7569c; }
+    .feedback-form__message:focus::placeholder {
+      color: #d7569c; }
   .feedback-form__submit {
     width: 30%;
     margin-top: 30px;
@@ -911,7 +942,13 @@ a {
     font-weight: 700;
     color: #ffffff;
     background-color: #000000;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease; }
+    .feedback-form__submit:hover {
+      background-color: #d7569c;
+      -webkit-transition: 0.5s ease;
+      transition: 0.5s ease; }
     @media (min-width: 320px) and (max-width: 767px) {
       .feedback-form__submit {
         -webkit-box-ordinal-group: 2;

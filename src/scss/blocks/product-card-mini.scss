@@ -28,6 +28,7 @@
 
   &__img-wrap {
     order: -1;
+    max-height: 370px;
     transition: $transition-base;
 
     &:hover {

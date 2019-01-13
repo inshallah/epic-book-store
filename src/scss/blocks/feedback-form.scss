@@ -14,6 +14,14 @@
     margin-right: 35px;
     border-bottom: 5px solid $gray-light;
     background-color: inherit;
+    transition: $transition-base;
+
+
+    &:hover {
+      border-color: $rose-dark;
+      transition: $transition-base;
+    }
+
 
     @media (min-width: $screen-xs) and (max-width: $screen-sm) {
       width: 100%;
@@ -24,11 +32,16 @@
 
     &::placeholder {
       position: relative;
-      // bottom: -10px;
       color: $gray-base-light;
       font-size: $font-size-md;
     }
+
+
+    &:focus::placeholder {
+      color: $rose-dark;
+    }
   }
+
 
   &__message {
     width: 30%;
@@ -37,6 +50,13 @@
     margin-right: 35px;
     border-bottom: 5px solid $gray-light;
     background-color: inherit;
+    transition: $transition-base;
+
+    &:hover {
+      border-color: $rose-dark;
+      transition: $transition-base;
+    }
+
 
     @media (min-width: $screen-xs) and (max-width: $screen-sm) {
       width: 100%;
@@ -50,11 +70,15 @@
 
     &::placeholder {
       position: relative;
-      // bottom: -10px;
       color: $gray-base-light;
       font-size: $font-size-md;
     }
+
+    &:focus::placeholder {
+      color: $rose-dark;
+    }
   }
+
 
   &__submit {
     width: 30%;
@@ -67,6 +91,12 @@
     color: $gray-light-ultimate;
     background-color: $gray-ultimate;
     cursor: pointer;
+    transition: $transition-base;
+
+    &:hover {
+      background-color: $rose-dark;
+      transition: $transition-base;
+    }
 
     @media (min-width: $screen-xs) and (max-width: $screen-sm) {
       order: 1;

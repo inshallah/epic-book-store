@@ -40,17 +40,17 @@ $('.page-header__toggle').on('click', function() {
 
 //слайдер
 
-// $('.j-slider').slick({
-//   dots: false,
-//   infinite: true,
-//   speed: 300,
-//   slidesToShow: 1,
-//   slidesToScroll: 1
-// });
+$('.j-slider').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1
+});
 
 //Вешаем слушатель на табы
 const tabWrap = document.querySelector('.j-tabs');
-const tabsItemArray = Array.from(tabWrap.children);
+const tabsItemArray = Array.prototype.slice.call(tabWrap.children);
 
 tabsItemArray.forEach(function(tab) {
   const link = tab.firstElementChild;

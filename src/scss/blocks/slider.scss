@@ -1,15 +1,13 @@
 .slider {
   position: relative;
+  padding: 0 calc(8.33%);
 
   &__item {
     display: flex !important;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   &__item-descr {
-    margin-right: 13%;
-
-
     @media (max-width: $screen-md) {
       width: 100%;
       margin-right: 0;
@@ -52,7 +50,7 @@
   &__item-announce {
     position: relative;
     z-index: 5;
-    width: 515px;
+    margin-right: -20%;
     font-size: $font-size-lg;
     line-height: $line-height-lg;
     font-weight: $font-weight-bd;
