@@ -156,6 +156,8 @@ a {
       bottom: 1px; }
   .page-header__icons {
     margin-right: 15px; }
+  .page-header__icons-link--phone {
+    margin-left: 10px; }
   @media (max-width: 767px) {
     .page-header__basket-img {
       margin-right: 10px; } }
@@ -391,7 +393,8 @@ a {
   position: relative;
   width: calc(25% - 30px);
   padding: 0 15px;
-  margin-bottom: 73px; }
+  margin-bottom: 73px;
+  cursor: pointer; }
   @media (min-width: 320px) and (max-width: 992px) {
     .product-card-mini {
       width: 260px;
