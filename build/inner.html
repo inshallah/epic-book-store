@@ -26,7 +26,18 @@
       </div>
 
       <div class=page-header__right>
-        <button class="main-nav__toggle">Главное меню</button>
+
+        <div class="page-header__toggle">
+          <span class="page-header__burgerline"> </span>
+          <span class="page-header__burgerline"></span>
+          <span class="page-header__burgerline"></span>
+        </div>
+
+        <div class="page-header__cross">
+          <span class="page-header__crossline"></span>
+          <span class="page-header__crossline"></span>
+        </div>
+
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -43,10 +54,14 @@
 
         <div class="page-header__icons">
           <a href="#">
-            <img class="page-header__basket-img" src="img/icon-basket.png" alt="basket-icon">
+            <svg width="20" height="21">
+              <use xlink:href="img/sprite.svg#icon_basket"></use>
+            </svg>
           </a>
           <a href="#">
-            <img class="page-header__phone-img" src="img/icon-phone.png" alt="phone-icon">
+            <svg width="16" height="16">
+              <use xlink:href="img/sprite.svg#icon_phone"></use>
+            </svg>
           </a>
         </div>
       </div>
