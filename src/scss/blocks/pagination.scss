@@ -24,7 +24,6 @@
   }
 
   &__list-item {
-    // margin-right: 21px;
   }
 
   &__list-link {
@@ -41,6 +40,7 @@
       bottom: -5px;
       z-index: -5;
       display: none;
+      color: $rose-darker;
       background-color: $rose-base;
       width: 30px;
       height: 30px;
@@ -49,6 +49,11 @@
 
     &:hover:before {
       display: block;
+      color: $rose-darker;
+    }
+
+    &:active {
+      color: $gray-ultimate;
     }
   }
 }

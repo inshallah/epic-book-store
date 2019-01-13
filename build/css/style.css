@@ -471,12 +471,16 @@ a {
       bottom: -5px;
       z-index: -5;
       display: none;
+      color: #d72384;
       background-color: #f4d4e4;
       width: 30px;
       height: 30px;
       border-radius: 50%; }
     .pagination__list-link:hover:before {
-      display: block; }
+      display: block;
+      color: #d72384; }
+    .pagination__list-link:active {
+      color: #000000; }
 
 .advantages {
   width: 100%;
