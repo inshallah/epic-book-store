@@ -216,9 +216,9 @@ a {
 .slider {
   position: relative; }
   .slider__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
@@ -372,6 +372,7 @@ a {
       display: block;
       width: 30px;
       height: 3px;
+      color: #1a1ff7;
       background-color: #ef529f;
       -webkit-transition: 0.5s ease;
       transition: 0.5s ease; }

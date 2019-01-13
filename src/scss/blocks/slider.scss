@@ -2,7 +2,7 @@
   position: relative;
 
   &__item {
-    display: flex;
+    display: flex !important;
     justify-content: center;
   }
 
