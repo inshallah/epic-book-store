@@ -80,81 +80,71 @@
   }
 }
 
-.slick-arrow {
+.slick-prev {
   position: absolute;
-  top: 45%;
-  cursor: pointer;
-  color: transparent;
-  background: transparent;
+  width: 42px;
+  height: 42px;
+  top: 50%;
+  font-size: 0;
+  left: 0;
   border: none;
   outline: none;
+  background-image: url(../img/slider_previous.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $rose-base;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: $transition-base;
+
 
   @media (min-width: $screen-xs) and (max-width: $screen-xs-s) {
     top: 106%;
-  }
-}
-
-.slick-prev {
-  right: 100%;
-
-  &:before {
-    content: '';
-    position: absolute;
-    width: 42px;
-    height: 42px;
-    z-index: 3;
-    background-image: url(../img/slider_previous.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: $rose-base;
-    border-radius: 50%;
-    transition: $transition-base;
+    left: 30%;
   }
 
-  &:hover:before {
-    content: '';
-    position: absolute;
-    width: 42px;
-    height: 42px;
-    background-image: url(../img/slider_previous-white.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: $rose-bright;
-    border-radius: 50%;
-    transform: rotate(180deg);
-    transition: $transition-base;
-  }
+
+  &:hover {
+   background-image: url(../img/slider_previous-white.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-color: $rose-bright;
+   transition: $transition-base;
+   transform: rotate(180deg);
+ }
 }
 
 
 .slick-next {
-  left: 100%;
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  top: 50%;
+  right: 0;
+  font-size: 0;
+  border: none;
+  outline: none;
+  background-image: url(../img/slider_next.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $rose-base;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: $transition-base;
 
-  &:before {
-    content: '';
-    position: absolute;
-    width: 42px;
-    height: 42px;
-    z-index: 3;
-    background-image: url(../img/slider_next.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: $rose-base;
-    border-radius: 50%;
-    transition: $transition-base;
+
+  @media (min-width: $screen-xs) and (max-width: $screen-xs-s) {
+    top: 106%;
+    right: 30%;
   }
 
-  &:hover:before {
-    content: '';
-    position: absolute;
-    width: 42px;
-    height: 42px;
+
+  &:hover {
     background-image: url(../img/slider_next-white.png);
     background-repeat: no-repeat;
     background-position: center;
     background-color: $rose-bright;
-    border-radius: 50%;
-    transform: rotate(180deg);
     transition: $transition-base;
+    transform: rotate(180deg);
   }
 }

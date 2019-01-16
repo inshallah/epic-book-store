@@ -157,13 +157,12 @@ a {
   .page-header__icons {
     margin-right: 15px; }
   .page-header__icons-link--phone {
-    margin-left: 10px; }
+    margin-right: 10px; }
     @media (min-width: 320px) and (max-width: 490px) {
       .page-header__icons-link--phone {
         display: none; } }
-  @media (max-width: 767px) {
-    .page-header__basket-img {
-      margin-right: 10px; } }
+  .page-header__icons-link--basket {
+    margin-right: 15px; }
   .page-header__phone-img {
     padding-bottom: 3px; }
     @media (max-width: 320px) {
@@ -266,7 +265,7 @@ a {
     font-weight: 700; }
     @media (min-width: 490px) and (max-width: 767px) {
       .slider__item-announce {
-        width: 370px;
+        margin: 10px 5px 13px 0;
         font-size: 20px;
         line-height: 30px; } }
     @media (min-width: 320px) and (max-width: 490px) {
@@ -274,14 +273,14 @@ a {
         width: -webkit-fit-content;
         width: -moz-fit-content;
         width: fit-content;
-        margin-top: 0;
-        font-size: 20px;
+        margin: 0 5px 13px 0;
+        font-size: 18px;
         line-height: 30px; } }
   .slider__item-more-about {
     font-size: 16px;
     font-weight: 600;
     color: #1a1ff7; }
-    @media (max-width: 320px) {
+    @media (min-width: 320px) and (max-width: 490px) {
       .slider__item-more-about {
         font-size: 14px; } }
   .slider__item-img-wrap {
@@ -363,12 +362,12 @@ a {
     font-size: 16px;
     font-weight: 600;
     color: #000000;
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease; }
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease; }
     .tabs__list-link:hover {
       color: #1a1ff7;
-      -webkit-transition: 0.5s ease;
-      transition: 0.5s ease; }
+      -webkit-transition: 0.6s ease;
+      transition: 0.6s ease; }
     .tabs__list-link:active:before {
       content: '';
       position: absolute;
@@ -378,8 +377,8 @@ a {
       height: 3px;
       color: #1a1ff7;
       background-color: #ef529f;
-      -webkit-transition: 0.5s ease;
-      transition: 0.5s ease; }
+      -webkit-transition: 0.6s ease;
+      transition: 0.6s ease; }
     @media (max-width: 490px) and (min-width: 320px) {
       .tabs__list-link {
         font-size: 14px; } }
@@ -415,13 +414,13 @@ a {
         -ms-flex-order: -1;
             order: -1;
     max-height: 370px;
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease; }
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease; }
     .product-card-mini__img-wrap:hover {
       -webkit-box-shadow: 0 10px 40px 10px rgba(239, 82, 159, 0.2);
               box-shadow: 0 10px 40px 10px rgba(239, 82, 159, 0.2);
-      -webkit-transition: 0.5s ease;
-      transition: 0.5s ease; }
+      -webkit-transition: 0.6s ease;
+      transition: 0.6s ease; }
   .product-card-mini__img {
     width: 100%;
     height: auto; }
@@ -437,12 +436,12 @@ a {
     font-size: 16px;
     font-weight: 700;
     color: #000000;
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease; }
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease; }
     .product-card-mini__price:hover {
       color: #ef529f;
-      -webkit-transition: 0.5s ease;
-      transition: 0.5s ease; }
+      -webkit-transition: 0.6s ease;
+      transition: 0.6s ease; }
 
 .pagination {
   width: 100%; }
@@ -853,12 +852,12 @@ a {
     margin-right: 35px;
     border-bottom: 5px solid #e8e8e8;
     background-color: inherit;
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease; }
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease; }
     .feedback-form__mail:hover {
       border-color: #d7569c;
-      -webkit-transition: 0.5s ease;
-      transition: 0.5s ease; }
+      -webkit-transition: 0.6s ease;
+      transition: 0.6s ease; }
     @media (min-width: 320px) and (max-width: 767px) {
       .feedback-form__mail {
         width: 100%;
@@ -895,12 +894,12 @@ a {
     margin-right: 35px;
     border-bottom: 5px solid #e8e8e8;
     background-color: inherit;
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease; }
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease; }
     .feedback-form__message:hover {
       border-color: #d7569c;
-      -webkit-transition: 0.5s ease;
-      transition: 0.5s ease; }
+      -webkit-transition: 0.6s ease;
+      transition: 0.6s ease; }
     @media (min-width: 320px) and (max-width: 767px) {
       .feedback-form__message {
         width: 100%;
@@ -943,12 +942,12 @@ a {
     color: #ffffff;
     background-color: #000000;
     cursor: pointer;
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease; }
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease; }
     .feedback-form__submit:hover {
       background-color: #d7569c;
-      -webkit-transition: 0.5s ease;
-      transition: 0.5s ease; }
+      -webkit-transition: 0.6s ease;
+      transition: 0.6s ease; }
     @media (min-width: 320px) and (max-width: 767px) {
       .feedback-form__submit {
         -webkit-box-ordinal-group: 2;
@@ -976,8 +975,8 @@ a {
     height: 20px;
     margin-right: 4px;
     border: 4px solid #e8e8e8;
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease;
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease;
     cursor: pointer; }
   .feedback-form__checkbox-label {
     font-weight: 600;
@@ -1094,76 +1093,66 @@ a {
     height: auto;
     border: 1px solid transparent; }
 
-.slick-arrow {
-  position: absolute;
-  top: 45%;
-  cursor: pointer;
-  color: transparent;
-  background: transparent;
-  border: none;
-  outline: none; }
-  @media (min-width: 320px) and (max-width: 490px) {
-    .slick-arrow {
-      top: 106%; } }
-
 .slick-prev {
-  right: 100%; }
-  .slick-prev:before {
-    content: '';
-    position: absolute;
-    width: 42px;
-    height: 42px;
-    z-index: 3;
-    background-image: url(../img/slider_previous.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #f4d4e4;
-    border-radius: 50%;
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease; }
-  .slick-prev:hover:before {
-    content: '';
-    position: absolute;
-    width: 42px;
-    height: 42px;
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  top: 50%;
+  font-size: 0;
+  left: 0;
+  border: none;
+  outline: none;
+  background-image: url(../img/slider_previous.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f4d4e4;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease; }
+  @media (min-width: 320px) and (max-width: 490px) {
+    .slick-prev {
+      top: 106%;
+      left: 30%; } }
+  .slick-prev:hover {
     background-image: url(../img/slider_previous-white.png);
     background-repeat: no-repeat;
     background-position: center;
     background-color: #ef529f;
-    border-radius: 50%;
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease;
     -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease; }
+            transform: rotate(180deg); }
 
 .slick-next {
-  left: 100%; }
-  .slick-next:before {
-    content: '';
-    position: absolute;
-    width: 42px;
-    height: 42px;
-    z-index: 3;
-    background-image: url(../img/slider_next.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #f4d4e4;
-    border-radius: 50%;
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease; }
-  .slick-next:hover:before {
-    content: '';
-    position: absolute;
-    width: 42px;
-    height: 42px;
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  top: 50%;
+  right: 0;
+  font-size: 0;
+  border: none;
+  outline: none;
+  background-image: url(../img/slider_next.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f4d4e4;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease; }
+  @media (min-width: 320px) and (max-width: 490px) {
+    .slick-next {
+      top: 106%;
+      right: 30%; } }
+  .slick-next:hover {
     background-image: url(../img/slider_next-white.png);
     background-repeat: no-repeat;
     background-position: center;
     background-color: #ef529f;
-    border-radius: 50%;
+    -webkit-transition: 0.6s ease;
+    transition: 0.6s ease;
     -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease; }
+            transform: rotate(180deg); }
 
 /*# sourceMappingURL=style.css.map */

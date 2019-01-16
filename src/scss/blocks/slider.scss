@@ -58,15 +58,16 @@
 
 
     @media (min-width: $screen-xs-s) and (max-width: $screen-sm) {
-      width: 370px;
+      // width: 370px;
+      margin: 10px 5px 13px 0;
       font-size: $font-size-md-x;
       line-height: $line-height-md;
     }
 
     @media (min-width: $screen-xs) and (max-width: $screen-xs-s) {
       width: fit-content;
-      margin-top: 0;
-      font-size: $font-size-md-x;
+      margin: 0 5px 13px 0;
+      font-size: ($font-size-md-x) - 2;
       line-height: $line-height-md;
     }
   }
@@ -77,7 +78,7 @@
     color: $link-color;
 
 
-    @media (max-width: $screen-xs) {
+    @media (min-width: $screen-xs) and (max-width: $screen-xs-s) {
       font-size: $font-size;
     }
   }
