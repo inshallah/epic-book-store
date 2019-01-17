@@ -42,8 +42,13 @@
     padding: 0 0 45px 30px;
     border: 8px solid $gray-light;
 
-    @media (min-width: $screen-xs) and (max-width: $screen-xs-s) {
-      padding: 40px 0 25px 9px;
+
+    @media (max-width: $screen-md) {
+      margin: 0 auto;
+    }
+
+    @media (min-width: $screen-xs) and (max-width: $screen-sm) {
+      padding: 20px 0 25px 9px;
     }
   }
 
@@ -56,13 +61,18 @@
     font-weight: $font-weight-bd;
 
 
+    @media (max-width: $screen-md) {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
 
     @media (min-width: $screen-xs-s) and (max-width: $screen-sm) {
-      // width: 370px;
       margin: 10px 5px 13px 0;
       font-size: $font-size-md-x;
       line-height: $line-height-md;
     }
+
 
     @media (min-width: $screen-xs) and (max-width: $screen-xs-s) {
       width: fit-content;

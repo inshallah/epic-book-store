@@ -98,6 +98,11 @@
   transition: $transition-base;
 
 
+  @media (min-width: $screen-xs-s) and (max-width: $screen-sm) {
+    left:-5%;
+  }
+
+
   @media (min-width: $screen-xs) and (max-width: $screen-xs-s) {
     top: 106%;
     left: 30%;
@@ -132,6 +137,10 @@
   cursor: pointer;
   transition: $transition-base;
 
+
+  @media (min-width: $screen-xs-s) and (max-width: $screen-sm) {
+    right:-5%;
+  }
 
   @media (min-width: $screen-xs) and (max-width: $screen-xs-s) {
     top: 106%;

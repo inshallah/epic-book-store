@@ -29,7 +29,8 @@
 
 
     @media (max-width: $screen-sm) {
-      margin-left: 10px;
+      display: block;
+      margin-left: 0;
     }
 
     @media (max-width: $screen-xs-s) {
