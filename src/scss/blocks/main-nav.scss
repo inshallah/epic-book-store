@@ -1,15 +1,18 @@
 .main-nav {
+  margin-right: 15px;
 
   @media (max-width: $screen-sm) {
-    margin-right: 15px;
-  }
-
-  @media (max-width: $screen-xs) {
     display: none;
   }
 
-  &__toggle {
-    display: none;
+  &--footer {
+    display: block;
+    margin-right: -15px;
+
+    @media (max-width: $screen-xs-s) {
+      width: 50px;
+      overflow-x: auto;
+    }
   }
 
   &__list {
@@ -17,13 +20,37 @@
     list-style: none;
     margin: 0;
     padding-left: 0;
+
+    @media (min-width: $screen-xs) and (max-width: $screen-xs-s) {
+      flex-direction: column;
+      position: absolute;
+      right: 0;
+    }
+
+    &--footer {
+
+      @media (max-width: $screen-xs-s) {
+        flex-direction: row;
+        overflow-x: auto;
+        width: 100px;
+      }
+    }
   }
 
+
   &__item {
-    margin-right: 20px;
     font-size: $font-size;
     font-weight: $font-weight-bd;
     text-transform: lowercase;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    @media (max-width: $screen-sm) {
+      margin-right: 5px;
+    }
+
   }
 
   &__link {
@@ -34,6 +61,3 @@
     }
   }
 }
-
-
-

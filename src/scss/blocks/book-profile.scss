@@ -288,8 +288,22 @@
 &__social-item {
   margin-right: 30px;
   cursor: pointer;
+  transition: $transition-base;
+
+  &:hover {
+    transition: $transition-base;
+  }
 }
 
+
+&__social-link {
+
+  transition: $transition-base;
+
+  &:hover {
+    transition: $transition-base;
+  }
+}
 
 &__shared-count {
  vertical-align: super;

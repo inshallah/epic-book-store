@@ -18,7 +18,7 @@
     }
 
 
-    @media (min-width: $screen-xs)and (max-width: $screen-xs-s) {
+    @media (min-width: $screen-xs) and (max-width: $screen-xs-s) {
       padding: 0 10px;
     }
   }
@@ -94,60 +94,66 @@
     top: 0;
     bottom: 0;
     margin: auto;
-// display: flex;
-flex-direction: column;
-justify-content: space-between;
-border: none;
-cursor: pointer;
-}
-
-
-&__crossline {
-  position: relative;
-  display: none;
-  width: 20px;
-  height: 2px;
-  background-color: #000;
-
-
-  &:first-child {
-    transform: rotate(45deg);
-    margin-top: 5px;
-    top: 1px;
+    // display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: none;
+    cursor: pointer;
   }
 
 
-  &:last-child {
-    transform: rotate(-45deg);
-    margin-bottom: 5px;
-    bottom: 1px;
-  }
-}
-
-
-&__icons {
-  margin-right: 15px;
-}
-
-
-&__basket-img {
-// margin-right: 20px;
-
-
-
-@media (max-width: $screen-sm) {
-  margin-right: 10px;
-}
-}
-
-
-&__phone-img {
-  padding-bottom: 3px;
-
-
-
-  @media (max-width: $screen-xs) {
+  &__crossline {
+    position: relative;
     display: none;
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+
+
+    &:first-child {
+      transform: rotate(45deg);
+      margin-top: 5px;
+      top: 1px;
+    }
+
+
+    &:last-child {
+      transform: rotate(-45deg);
+      margin-bottom: 5px;
+      bottom: 1px;
+    }
   }
-}
+
+
+  &__icons {
+    margin-right: 15px;
+  }
+
+  &__icons-link {
+
+    &--phone {
+      margin-right: 10px;
+
+
+      @media (min-width: $screen-xs) and (max-width: $screen-xs-s) {
+        display: none;
+      }
+    }
+
+
+    &--basket {
+      margin-right: 15px;
+    }
+  }
+
+
+  &__phone-img {
+    padding-bottom: 3px;
+
+
+
+    @media (max-width: $screen-xs) {
+      display: none;
+    }
+  }
 }
