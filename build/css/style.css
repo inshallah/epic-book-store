@@ -1060,6 +1060,202 @@ a {
         top: 90px;
         line-height: 30px; } }
 
+.recommendations {
+  padding-top: 70px;
+  padding-bottom: 100px; }
+  .recommendations__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px; }
+  .recommendations__title {
+    margin-top: 0;
+    font-size: 50px; }
+  .recommendations__container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 302px 10px 1fr 10px 1fr 10px 265px;
+    grid-template-columns: 302px 1fr 1fr 265px;
+    -ms-grid-rows: 1fr 10px 1fr 10px 1fr 10px 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+        grid-template-areas: "article poll poll present" "gallery poll poll present" "gallery vote kids present" "exchange exchange exchange present"; }
+  .recommendations__article {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: article;
+    padding: 20px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 3px 9.2px 0.8px rgba(64, 66, 172, 0.35);
+            box-shadow: 0px 3px 9.2px 0.8px rgba(64, 66, 172, 0.35);
+    border-radius: 2%; }
+  .recommendations__article-title {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 600; }
+  .recommendations__article-preview {
+    font-size: 16px;
+    line-height: 30px; }
+  .recommendations__article-more {
+    font-size: 16px;
+    font-weight: 600; }
+  .recommendations__gallery {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    grid-area: gallery;
+    position: relative;
+    background-image: url("../../img/recommend-gallery.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 1%; }
+    .recommendations__gallery:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(13, 17, 196, 0.58);
+      border-radius: inherit; }
+  .recommendations__gallery-title {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    top: 130px;
+    margin: 0;
+    padding: 0 10px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #fefefe; }
+  .recommendations__book-poll {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 3;
+    grid-area: poll;
+    position: relative;
+    background-image: url("../../img/reccom-book-voting.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 1%; }
+    .recommendations__book-poll:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(13, 17, 196, 0.58);
+      border-radius: inherit; }
+  .recommendations__book-poll-title {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #fefefe; }
+  .recommendations__book-poll-preview {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    font-size: 16px;
+    color: #fefefe; }
+  .recommendations__users-voting {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+    grid-area: vote;
+    padding: 13px 14px 8px 12px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 3px 9.2px 0.8px rgba(64, 66, 172, 0.35);
+            box-shadow: 0px 3px 9.2px 0.8px rgba(64, 66, 172, 0.35);
+    border-radius: 2%; }
+  .recommendations__users-voting-title {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 600; }
+  .recommendations__users-voting-preview {
+    font-size: 16px;
+    line-height: 30px; }
+  .recommendations__users-voting-btn {
+    width: 100%;
+    padding: 17px 0;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #000000; }
+  .recommendations__kid-books {
+    -ms-grid-row: 5;
+    -ms-grid-column: 5;
+    grid-area: kids;
+    padding: 20px 17px 0 16px;
+    background-color: #ce6194;
+    -webkit-box-shadow: 0px 3px 9.2px 0.8px rgba(64, 66, 172, 0.35);
+            box-shadow: 0px 3px 9.2px 0.8px rgba(64, 66, 172, 0.35);
+    border-radius: 2%; }
+  .recommendations__kid-books-title {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #f5f5f5; }
+  .recommendations__kid-books-preview {
+    font-size: 16px;
+    line-height: 30px;
+    color: #f5f5f5; }
+  .recommendations__books-exchange {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-area: exchange;
+    position: relative;
+    background-image: url("../../img/recomm-books-exchange.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 1%; }
+    .recommendations__books-exchange:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(215, 86, 156, 0.8);
+      border-radius: inherit; }
+  .recommendations__books-exchange-title {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    top: 40px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #fefefe; }
+  .recommendations__books-exchange-preview {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 16px;
+    color: #fefefe; }
+  .recommendations__book-present {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 7;
+    -ms-grid-column: 7;
+    grid-area: present;
+    padding-left: 15px; }
+  .recommendations__book-present-title {
+    font-size: 16px;
+    font-weight: 600; }
+  .recommendations__book-present-preview {
+    font-size: 16px;
+    line-height: 30px; }
+  .recommendations__book-present-img {
+    width: 100%; }
+  .recommendations__book-present-name {
+    font-size: 24px;
+    font-weight: 700; }
+  .recommendations__book-present-descr {
+    font-size: 16px;
+    line-height: 24px;
+    font-style: italic; }
+
 .slick-slider {
   position: relative;
   display: block;
