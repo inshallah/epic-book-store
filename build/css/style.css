@@ -1070,17 +1070,12 @@ a {
     margin-top: 0;
     font-size: 50px; }
   .recommendations__container {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 302px 10px 1fr 10px 1fr 10px 265px;
     grid-template-columns: 302px 1fr 1fr 265px;
-    -ms-grid-rows: 1fr 10px 1fr 10px 1fr 10px 1fr;
     grid-template-rows: repeat(4, 1fr);
     grid-gap: 10px;
-        grid-template-areas: "article poll poll present" "gallery poll poll present" "gallery vote kids present" "exchange exchange exchange present"; }
+    grid-template-areas: "article poll poll present" "gallery poll poll present" "gallery vote kids present" "exchange exchange exchange present"; }
   .recommendations__article {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
     grid-area: article;
     padding: 20px;
     background-color: #ffffff;
@@ -1098,9 +1093,6 @@ a {
     font-size: 16px;
     font-weight: 600; }
   .recommendations__gallery {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 1;
     grid-area: gallery;
     position: relative;
     background-image: url("../../img/recommend-gallery.jpg");
@@ -1126,10 +1118,6 @@ a {
     line-height: 30px;
     color: #fefefe; }
   .recommendations__book-poll {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 3;
     grid-area: poll;
     position: relative;
     background-image: url("../../img/reccom-book-voting.jpg");
@@ -1158,8 +1146,6 @@ a {
     font-size: 16px;
     color: #fefefe; }
   .recommendations__users-voting {
-    -ms-grid-row: 5;
-    -ms-grid-column: 3;
     grid-area: vote;
     padding: 13px 14px 8px 12px;
     background-color: #ffffff;
@@ -1183,8 +1169,6 @@ a {
     color: #ffffff;
     background-color: #000000; }
   .recommendations__kid-books {
-    -ms-grid-row: 5;
-    -ms-grid-column: 5;
     grid-area: kids;
     padding: 20px 17px 0 16px;
     background-color: #ce6194;
@@ -1201,9 +1185,6 @@ a {
     line-height: 30px;
     color: #f5f5f5; }
   .recommendations__books-exchange {
-    -ms-grid-row: 7;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 5;
     grid-area: exchange;
     position: relative;
     background-image: url("../../img/recomm-books-exchange.jpg");
@@ -1234,9 +1215,6 @@ a {
     font-size: 16px;
     color: #fefefe; }
   .recommendations__book-present {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 7;
-    -ms-grid-column: 7;
     grid-area: present;
     padding-left: 15px; }
   .recommendations__book-present-title {
@@ -1258,13 +1236,10 @@ a {
 .book-profile {
   padding-top: 40px; }
   .book-profile__inner {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 160px 35px 360px 35px auto;
     grid-template-columns: 160px 360px auto;
-    -ms-grid-rows: auto;
     grid-template-rows: auto;
-        grid-template-areas: "demos picture info" ". about about" ". socials .";
+    grid-template-areas: "demos picture info" ". about about" ". socials .";
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1275,27 +1250,20 @@ a {
     padding: 0 60px; }
     @media (max-width: 1200px) {
       .book-profile__inner {
-        -ms-grid-columns: 262px auto auto;
         grid-template-columns: 262px auto auto;
         grid-row-gap: 40px;
-        -ms-grid-rows: auto 40px auto 40px auto 40px auto;
-            grid-template-areas: "picture info info" "demos info info" "about about about" "socials . ."; } }
+        grid-template-areas: "picture info info" "demos info info" "about about about" "socials . ."; } }
     @media (max-width: 767px) {
       .book-profile__inner {
-        -ms-grid-columns: 200px auto auto;
         grid-template-columns: 200px auto auto; } }
     @media (max-width: 490px) and (min-width: 320px) {
       .book-profile__inner {
-        -ms-grid-columns: auto;
         grid-template-columns: auto;
         grid-row-gap: 40px;
-        -ms-grid-rows: auto 40px auto 40px auto 40px auto;
-            grid-template-areas: "picture" "info" "about" "socials";
+        grid-template-areas: "picture" "info" "about" "socials";
         padding: 0 15px;
         max-width: 320px; } }
   .book-profile__demo-pages {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
     grid-area: demos;
     max-width: 160px;
     height: -webkit-fit-content;
@@ -1332,13 +1300,10 @@ a {
         .book-profile__demo-pages-page:not(:last-child) {
           margin-right: 14px; } }
   .book-profile__cover-page {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
     grid-area: picture; }
     @media (max-width: 490px) and (min-width: 320px) {
       .book-profile__cover-page {
-        -ms-grid-column-align: center;
-            justify-self: center; } }
+        justify-self: center; } }
   .book-profile__cover-page-img {
     width: 320px;
     max-height: 454px; }
@@ -1347,13 +1312,10 @@ a {
         width: 100%;
         height: auto; } }
   .book-profile__info {
-    -ms-grid-row: 1;
-    -ms-grid-column: 5;
     grid-area: info; }
     @media (max-width: 490px) and (min-width: 320px) {
       .book-profile__info {
-        -ms-grid-column-align: center;
-            justify-self: center; } }
+        justify-self: center; } }
   .book-profile__title {
     margin-top: 0;
     font-size: 36px;
@@ -1387,9 +1349,6 @@ a {
   .book-profile__tech-info-price-value {
     font-size: 16px; }
   .book-profile__description {
-    -ms-grid-row: 3;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 3;
     grid-area: about;
     padding-right: 288px; }
     @media (max-width: 1200px) and (min-width: 767px) {
@@ -1400,8 +1359,7 @@ a {
         padding-right: 0; } }
     @media (max-width: 490px) and (min-width: 320px) {
       .book-profile__description {
-        -ms-grid-column-align: center;
-            justify-self: center;
+        justify-self: center;
         max-width: 260px; } }
   .book-profile__description-title {
     margin-top: 0;
@@ -1418,45 +1376,8 @@ a {
     font-weight: 600;
     color: #1a1ff7; }
   .book-profile__social-links-shared {
-    -ms-grid-row: 5;
-    -ms-grid-column: 3;
     grid-area: socials;
     margin-top: 20px; }
-  @media (max-width: 1200px){
-      .book-profile__demo-pages {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1; }
-      .book-profile__cover-page {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1; }
-      .book-profile__info {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2; }
-      .book-profile__description {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3; }
-      .book-profile__social-links-shared {
-    -ms-grid-row: 7;
-    -ms-grid-column: 1; } }
-  @media (max-width: 490px) and (min-width: 320px){
-      .book-profile__cover-page {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1; }
-      .book-profile__info {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1; }
-      .book-profile__description {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1; }
-      .book-profile__social-links-shared {
-    -ms-grid-row: 7;
-    -ms-grid-column: 1; } }
     @media (max-width: 490px) and (min-width: 320px) {
       .book-profile__social-links-shared {
         padding: 0 10px; } }
